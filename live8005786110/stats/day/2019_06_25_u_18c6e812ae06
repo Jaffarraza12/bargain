@@ -1,0 +1,777 @@
+<br><br>
+<table cellpadding="0" cellspacing="0" align="center" style="min-width:900px;">
+	<tr>
+		<td>
+			<table cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td class="header_line"><!--lang_stats_visitors--></td>
+					<td class="header_line" align="right"><script>document.write(new Date(2019,5,25,0, 00, 00, 0).toLocaleDateString());</script></td>
+				</tr>
+				<tr>
+					<td class="header_nav_line">&nbsp;&nbsp;28 <!--lang_stats_visitors--> (<em>unique</em>)</td>
+					<td class="header_nav_line" align="right">Status:&nbsp;&nbsp;<!--lang_stats_status_closed-->&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table class="bt_values" cellspacing="0" cellpadding="2" width="100%">
+				<tr>
+					<td class="bt_column_header" width="60" align="center"><!--lang_stats_pages--></td>
+					<td class="bt_column_header" width="80" align="center"><!--lang_stats_entrance--></td>
+					<td class="bt_column_header" width="100" align="center"><!--lang_stats_exit--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_country--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_city--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_system--></td>
+					<td class="bt_column_header" width="25">&nbsp;</td>
+				</tr>
+				<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_1');"><b>1</b></a></td>
+    <td align="center">00:11:39</td>
+    <td align="center">00:21:51</td>
+    <td NOWRAP>Pakistan</td>
+    <td NOWRAP>Lahore</td>
+    <td NOWRAP>Windows 7</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','202.141.xxx.xxx','202-141-247-2.multi.net.pk','1b78ca7eaf',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_11">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">00:11:39</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.google.com/" target="_blank"><b>https://www.google.com/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_12">
+		<td align="center">1</td>
+		<td align="center">00:11:39</td>
+		<td align="center">00:12:10</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/gemei_gm-4833_10_in_1_professional_hot_air_styler" target="_blank"><b>https://www.bargain.pk/gemei_gm-4833_10_in_1_professional_hot_air_styler</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_2');"><b>2</b></a></td>
+    <td align="center">00:21:52</td>
+    <td align="center">00:41:13</td>
+    <td NOWRAP>Pakistan</td>
+    <td NOWRAP>Karachi</td>
+    <td NOWRAP>Windows 7</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','110.37.xxx.xxx','WGPON-37217-54.wateen.net','70a6f3d556',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_21">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">00:21:52</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.google.com/" target="_blank"><b>https://www.google.com/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_22">
+		<td align="center">1</td>
+		<td align="center">00:21:52</td>
+		<td align="center">00:23:27</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/vitamins_supplements/fish_oils__omegas" target="_blank"><b>https://www.bargain.pk/vitamins_supplements/fish_oils__omegas</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_23">
+		<td align="center">2</td>
+		<td align="center">00:23:27</td>
+		<td align="center">00:37:38</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/puritans-pride-evening-primrose-oil" target="_blank"><b>https://www.bargain.pk/puritans-pride-evening-primrose-oil</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_3');"><b>1</b></a></td>
+    <td align="center">00:32:55</td>
+    <td align="center">00:41:13</td>
+    <td NOWRAP>India</td>
+    <td NOWRAP>Jalalpur</td>
+    <td NOWRAP>Windows 10</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','150.107.xxx.xxx','150.107.xxx.xxx','f18da8cef2',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_31">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">00:32:55</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.google.com/" target="_blank"><b>https://www.google.com/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_32">
+		<td align="center">1</td>
+		<td align="center">00:32:55</td>
+		<td align="center">00:33:57</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/nutrex-tub-testosterone-booster" target="_blank"><b>https://www.bargain.pk/nutrex-tub-testosterone-booster</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_4');"><b>1</b></a></td>
+    <td align="center">01:41:19</td>
+    <td align="center">02:11:00</td>
+    <td NOWRAP>United States</td>
+    <td NOWRAP>New York</td>
+    <td NOWRAP>Nexus / AndroidOS</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','66.249.xxx.xxx','google-proxy-66-249-83-29.google.com','4d7a347f03',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_41">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">01:41:19</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=http://www.google.com/" target="_blank"><b>http://www.google.com/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_42">
+		<td align="center">1</td>
+		<td align="center">01:41:19</td>
+		<td align="center">01:41:19</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/marvel-spiderman-homecoming-action" target="_blank"><b>https://www.bargain.pk/marvel-spiderman-homecoming-action</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_5');"><b>6</b></a></td>
+    <td align="center">01:41:20</td>
+    <td align="center">02:11:00</td>
+    <td NOWRAP>Pakistan</td>
+    <td NOWRAP>Karachi</td>
+    <td NOWRAP>AndroidOS</td>
+    <td class="vs" align="right"><div class="ico_info" onclick="showInfoBox('','2','1','103.7.xxx.xxx','103.7.xxx.xxx','5e26aaf7c7',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_51">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">00:41:18</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.google.com/" target="_blank"><b>https://www.google.com/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_52">
+		<td align="center">1</td>
+		<td align="center">00:41:18</td>
+		<td align="center">00:41:57</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/diversity-fashion-frozen-dolls-elsa" target="_blank"><b>https://www.bargain.pk/diversity-fashion-frozen-dolls-elsa</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_53">
+		<td align="center">2</td>
+		<td align="center">00:41:57</td>
+		<td align="center">00:58:03</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/kids-corner" target="_blank"><b>https://www.bargain.pk/kids-corner</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_54">
+		<td align="center">3</td>
+		<td align="center">01:41:20</td>
+		<td align="center">01:42:14</td>
+		<td colspan="4"><!--lang_stats_browser--> 2:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/baby-toys" target="_blank"><b>https://www.bargain.pk/baby-toys</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_55">
+		<td align="center">4</td>
+		<td align="center">01:42:14</td>
+		<td align="center">01:42:46</td>
+		<td colspan="4"><!--lang_stats_browser--> 2:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/frozen-doll-house-beautiful-gift-series" target="_blank"><b>https://www.bargain.pk/frozen-doll-house-beautiful-gift-series</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_56">
+		<td align="center">5</td>
+		<td align="center">01:42:46</td>
+		<td align="center">01:43:19</td>
+		<td colspan="4"><!--lang_stats_browser--> 2:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/baby-toys" target="_blank"><b>https://www.bargain.pk/baby-toys</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_57">
+		<td align="center">6</td>
+		<td align="center">01:43:19</td>
+		<td align="center">01:43:19</td>
+		<td colspan="4"><!--lang_stats_browser--> 2:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/baby-toys?page=2" target="_blank"><b>https://www.bargain.pk/baby-toys?page=2</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_6');"><b>1</b></a></td>
+    <td align="center">02:11:00</td>
+    <td align="center">02:39:11</td>
+    <td NOWRAP>United States</td>
+    <td NOWRAP>New York</td>
+    <td NOWRAP>Nexus / AndroidOS</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','64.233.xxx.xxx','google-proxy-64-233-172-61.google.com','ea4e84412d',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_61">
+		<td align="center">1</td>
+		<td align="center">02:11:00</td>
+		<td align="center">02:11:01</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/gemini-may-21-june-20-t-shirt" target="_blank"><b>https://www.bargain.pk/gemini-may-21-june-20-t-shirt</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_7');"><b>4</b></a></td>
+    <td align="center">02:39:13</td>
+    <td align="center">11:49:21</td>
+    <td NOWRAP>Pakistan</td>
+    <td NOWRAP>Karachi</td>
+    <td NOWRAP>AndroidOS</td>
+    <td class="vs" align="right"><div class="ico_info" onclick="showInfoBox('','154','1','39.50.xxx.xxx','45.116.xxx.xxx','4a47d98c39',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_71">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">02:39:13</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/search/Ginseng" target="_blank"><b>https://www.bargain.pk/search/Ginseng</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_72">
+		<td align="center">1</td>
+		<td align="center">02:39:13</td>
+		<td align="center">02:39:13</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/puritans-pride-red-panax-ginseng-extract?search=Ginseng" target="_blank"><b>https://www.bargain.pk/puritans-pride-red-panax-ginseng-extract?search=Ginseng</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_73">
+		<td align="center">2</td>
+		<td align="center">09:20:31</td>
+		<td align="center">09:41:28</td>
+		<td colspan="4"><!--lang_stats_browser--> 2:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/puritans-pride-red-panax-ginseng-extract?search=Ginseng" target="_blank"><b>https://www.bargain.pk/puritans-pride-red-panax-ginseng-extract?search=Ginseng</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_74">
+		<td align="center">3</td>
+		<td align="center">11:05:10</td>
+		<td align="center">11:06:43</td>
+		<td colspan="4"><!--lang_stats_browser--> 3:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/puritans-pride-red-panax-ginseng-extract?search=Ginseng" target="_blank"><b>https://www.bargain.pk/puritans-pride-red-panax-ginseng-extract?search=Ginseng</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_75">
+		<td align="center">4</td>
+		<td align="center">11:41:42</td>
+		<td align="center">11:41:42</td>
+		<td colspan="4"><!--lang_stats_browser--> 4:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/puritans-pride-red-panax-ginseng-extract?search=Ginseng" target="_blank"><b>https://www.bargain.pk/puritans-pride-red-panax-ginseng-extract?search=Ginseng</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_8');"><b>2</b></a></td>
+    <td align="center">02:43:04</td>
+    <td align="center">03:14:55</td>
+    <td NOWRAP>China</td>
+    <td NOWRAP>Wuhan</td>
+    <td NOWRAP>Windows 7</td>
+    <td class="vs" align="right"><div class="ico_info" onclick="showInfoBox('','2','1','171.83.xxx.xxx','171.83.xxx.xxx','4554186dd7',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_81">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">02:43:04</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.google.com/" target="_blank"><b>https://www.google.com/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_82">
+		<td align="center">1</td>
+		<td align="center">02:43:04</td>
+		<td align="center">02:52:14</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/muti_purpose_mop_steam_vacuum_cleaner" target="_blank"><b>https://www.bargain.pk/muti_purpose_mop_steam_vacuum_cleaner</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_83">
+		<td align="center">2</td>
+		<td align="center">02:56:11</td>
+		<td align="center">02:56:42</td>
+		<td colspan="4"><!--lang_stats_browser--> 2:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/muti_purpose_mop_steam_vacuum_cleaner" target="_blank"><b>https://www.bargain.pk/muti_purpose_mop_steam_vacuum_cleaner</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_9');"><b>1</b></a></td>
+    <td align="center">03:15:09</td>
+    <td align="center">04:05:16</td>
+    <td NOWRAP>Pakistan</td>
+    <td NOWRAP>Lahore</td>
+    <td NOWRAP>Ubuntu (Linux)</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','72.255.xxx.xxx','72.255.xxx.xxx','26ddd3e7c8',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_91">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">03:15:08</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.youtube.com/" target="_blank"><b>https://www.youtube.com/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_92">
+		<td align="center">1</td>
+		<td align="center">03:15:08</td>
+		<td align="center">04:02:01</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/" target="_blank"><b>https://www.bargain.pk/</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_10');"><b>1</b></a></td>
+    <td align="center">03:39:39</td>
+    <td align="center">03:43:37</td>
+    <td NOWRAP>UAE</td>
+    <td NOWRAP>Dubai</td>
+    <td NOWRAP>Windows 10</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','94.57.xxx.xxx','94.57.xxx.xxx','3c9609815d',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_101">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">03:39:39</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.google.com/" target="_blank"><b>https://www.google.com/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_102">
+		<td align="center">1</td>
+		<td align="center">03:39:39</td>
+		<td align="center">03:41:09</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/pakistan-navy-t-shirt" target="_blank"><b>https://www.bargain.pk/pakistan-navy-t-shirt</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_11');"><b>1</b></a></td>
+    <td align="center">04:05:19</td>
+    <td align="center">04:48:29</td>
+    <td NOWRAP>United States</td>
+    <td NOWRAP>New York</td>
+    <td NOWRAP>Windows 10</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','103.127.xxx.xxx','103.127.xxx.xxx','50ea5113e1',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_111">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">04:05:19</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.google.com/" target="_blank"><b>https://www.google.com/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_112">
+		<td align="center">1</td>
+		<td align="center">04:05:19</td>
+		<td align="center">04:09:21</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/vitamins_supplements/herbs" target="_blank"><b>https://www.bargain.pk/vitamins_supplements/herbs</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_12');"><b>1</b></a></td>
+    <td align="center">04:48:30</td>
+    <td align="center">04:54:18</td>
+    <td NOWRAP>United States</td>
+    <td NOWRAP>New York</td>
+    <td NOWRAP>Windows 7</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','66.220.xxx.xxx','66.220.xxx.xxx','ab49d4c957',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_121">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">04:48:30</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.facebook.com/" target="_blank"><b>https://www.facebook.com/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_122">
+		<td align="center">1</td>
+		<td align="center">04:48:30</td>
+		<td align="center">04:48:30</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/?fbclid=IwAR1Pe1qKs09lErevv9Q_pDMYEPCTa3yMxGSG4g9ceg1llovkYgo4SySON7g" target="_blank"><b>https://www.bargain.pk/?fbclid=IwAR1Pe1qKs09lErevv9Q_pDMYEPCTa3yMxGSG4g9ceg1llovkYgo4SySON7g</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_13');"><b>1</b></a></td>
+    <td align="center">04:54:19</td>
+    <td align="center">04:58:05</td>
+    <td NOWRAP>Pakistan</td>
+    <td NOWRAP>Karachi</td>
+    <td NOWRAP>AndroidOS</td>
+    <td class="vs" align="right"><div class="ico_info" onclick="showInfoBox('','3','1','39.44.xxx.xxx','39.57.xxx.xxx','a86a56727d',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_131">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">04:54:19</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.google.com/" target="_blank"><b>https://www.google.com/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_132">
+		<td align="center">1</td>
+		<td align="center">04:54:19</td>
+		<td align="center">04:55:20</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/vitamins_supplements/multivitamins" target="_blank"><b>https://www.bargain.pk/vitamins_supplements/multivitamins</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_14');"><b>3</b></a></td>
+    <td align="center">05:17:28</td>
+    <td align="center">05:29:19</td>
+    <td NOWRAP>India</td>
+    <td NOWRAP>Madras</td>
+    <td NOWRAP>iPhone / iOS</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','49.32.xxx.xxx','49.32.xxx.xxx','df87a09619',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_141">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">05:17:28</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.google.com/" target="_blank"><b>https://www.google.com/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_142">
+		<td align="center">1</td>
+		<td align="center">05:17:28</td>
+		<td align="center">05:17:36</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/vitamins_supplements/vitamins_a-z" target="_blank"><b>https://www.bargain.pk/vitamins_supplements/vitamins_a-z</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_143">
+		<td align="center">2</td>
+		<td align="center">05:17:36</td>
+		<td align="center">05:18:15</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/gnc_biotin_5000mg_for_healthy_hair,_skin__nails_dietary_supplement" target="_blank"><b>https://www.bargain.pk/gnc_biotin_5000mg_for_healthy_hair,_skin__nails_dietary_supplement</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_144">
+		<td align="center">3</td>
+		<td align="center">05:18:15</td>
+		<td align="center">05:18:46</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/vitamins_supplements/vitamins_a-z" target="_blank"><b>https://www.bargain.pk/vitamins_supplements/vitamins_a-z</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_15');"><b>3</b></a></td>
+    <td align="center">05:29:25</td>
+    <td align="center">05:49:03</td>
+    <td NOWRAP>Pakistan</td>
+    <td NOWRAP>Karachi</td>
+    <td NOWRAP>Windows 7</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','139.190.xxx.xxx','139.190.xxx.xxx','4900c5b0b3',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_151">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">05:29:25</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.google.com/" target="_blank"><b>https://www.google.com/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_152">
+		<td align="center">1</td>
+		<td align="center">05:29:25</td>
+		<td align="center">05:29:46</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/vitamins_supplements/vitamins_a-z" target="_blank"><b>https://www.bargain.pk/vitamins_supplements/vitamins_a-z</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_153">
+		<td align="center">2</td>
+		<td align="center">05:29:46</td>
+		<td align="center">05:30:09</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/vitamins_supplements/fish_oils__omegas" target="_blank"><b>https://www.bargain.pk/vitamins_supplements/fish_oils__omegas</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_154">
+		<td align="center">3</td>
+		<td align="center">05:30:09</td>
+		<td align="center">05:30:09</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/vitamins_supplements/multivitamins" target="_blank"><b>https://www.bargain.pk/vitamins_supplements/multivitamins</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_16');"><b>3</b></a></td>
+    <td align="center">05:49:07</td>
+    <td align="center">05:59:30</td>
+    <td NOWRAP>Pakistan</td>
+    <td NOWRAP>Karachi</td>
+    <td NOWRAP>iPhone / iOS</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','203.101.xxx.xxx','203.101.xxx.xxx','f0e7beb6b9',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_161">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">05:49:07</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.google.com.pk/" target="_blank"><b>https://www.google.com.pk/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_162">
+		<td align="center">1</td>
+		<td align="center">05:49:07</td>
+		<td align="center">05:50:05</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/vitamins_supplements/fish_oils__omegas" target="_blank"><b>https://www.bargain.pk/vitamins_supplements/fish_oils__omegas</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_163">
+		<td align="center">2</td>
+		<td align="center">05:50:05</td>
+		<td align="center">05:55:38</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/seven_seas_fish_oil_plus_one_a_day_120_capsules_" target="_blank"><b>https://www.bargain.pk/seven_seas_fish_oil_plus_one_a_day_120_capsules_</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_164">
+		<td align="center">3</td>
+		<td align="center">05:55:38</td>
+		<td align="center">05:56:38</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/vitamins_supplements/fish_oils__omegas" target="_blank"><b>https://www.bargain.pk/vitamins_supplements/fish_oils__omegas</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_17');"><b>2</b></a></td>
+    <td align="center">06:34:52</td>
+    <td align="center">07:15:43</td>
+    <td NOWRAP>Pakistan</td>
+    <td NOWRAP>Lahore</td>
+    <td NOWRAP>iPhone / iOS</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','119.160.xxx.xxx','host-104-net-100-160-119.mobilinkinfinity.net.pk','c8b36339dd',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_171">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">06:34:52</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.google.com.pk/" target="_blank"><b>https://www.google.com.pk/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_172">
+		<td align="center">1</td>
+		<td align="center">06:34:52</td>
+		<td align="center">06:35:37</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/vitamins_supplements/vitamins_a-z" target="_blank"><b>https://www.bargain.pk/vitamins_supplements/vitamins_a-z</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_173">
+		<td align="center">2</td>
+		<td align="center">06:35:37</td>
+		<td align="center">06:46:01</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/caltrate_vitamin-d_supplement_calcium_suplement_120_tablets_" target="_blank"><b>https://www.bargain.pk/caltrate_vitamin-d_supplement_calcium_suplement_120_tablets_</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_18');"><b>2</b></a></td>
+    <td align="center">07:15:44</td>
+    <td align="center">08:38:19</td>
+    <td NOWRAP>Pakistan</td>
+    <td NOWRAP>Karachi</td>
+    <td NOWRAP>iPhone / iOS</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','119.160.xxx.xxx','host-230-net-118-160-119.mobilinkinfinity.net.pk','ba239adcd6',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_181">
+		<td align="center">1</td>
+		<td align="center">07:15:44</td>
+		<td align="center">07:15:58</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/" target="_blank"><b>https://www.bargain.pk/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_182">
+		<td align="center">2</td>
+		<td align="center">07:15:58</td>
+		<td align="center">07:16:28</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/graphic-tees" target="_blank"><b>https://www.bargain.pk/graphic-tees</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_19');"><b>1</b></a></td>
+    <td align="center">08:38:30</td>
+    <td align="center">09:20:30</td>
+    <td NOWRAP>United States</td>
+    <td NOWRAP><!--lang_stats_unknown--></td>
+    <td NOWRAP>Windows 10</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','39.41.xxx.xxx','39.41.xxx.xxx','5be960534c',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_191">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">08:38:30</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.google.com.pk/" target="_blank"><b>https://www.google.com.pk/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_192">
+		<td align="center">1</td>
+		<td align="center">08:38:30</td>
+		<td align="center">08:39:32</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/vitamins_supplements/fish_oils__omegas" target="_blank"><b>https://www.bargain.pk/vitamins_supplements/fish_oils__omegas</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_20');"><b>1</b></a></td>
+    <td align="center">11:33:28</td>
+    <td align="center">11:41:05</td>
+    <td NOWRAP>Pakistan</td>
+    <td NOWRAP>Lahore</td>
+    <td NOWRAP>AndroidOS</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','39.46.xxx.xxx','39.46.xxx.xxx','a2d46b4368',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_201">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">11:33:28</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.google.com/" target="_blank"><b>https://www.google.com/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_202">
+		<td align="center">1</td>
+		<td align="center">11:33:28</td>
+		<td align="center">11:33:28</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/body_building_fitness/bodybuilding-multivitamins" target="_blank"><b>https://www.bargain.pk/body_building_fitness/bodybuilding-multivitamins</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_21');"><b>1</b></a></td>
+    <td align="center">11:41:06</td>
+    <td align="center">11:49:21</td>
+    <td NOWRAP>United States</td>
+    <td NOWRAP>New York</td>
+    <td NOWRAP>Nexus / AndroidOS</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','66.249.xxx.xxx','google-proxy-66-249-83-1.google.com','975c8879f4',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_211">
+		<td align="center">1</td>
+		<td align="center">11:41:06</td>
+		<td align="center">11:41:06</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/kings-are-born-in-july-printed-t-shirt" target="_blank"><b>https://www.bargain.pk/kings-are-born-in-july-printed-t-shirt</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_22');"><b>1</b></a></td>
+    <td align="center">11:41:06</td>
+    <td align="center">11:49:21</td>
+    <td NOWRAP>United States</td>
+    <td NOWRAP>New York</td>
+    <td NOWRAP>Nexus / AndroidOS</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','66.249.xxx.xxx','google-proxy-66-249-83-1.google.com','3b4b31dda3',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_221">
+		<td align="center">1</td>
+		<td align="center">11:41:06</td>
+		<td align="center">11:41:06</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/kings-are-born-in-july-printed-t-shirt" target="_blank"><b>https://www.bargain.pk/kings-are-born-in-july-printed-t-shirt</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_23');"><b>1</b></a></td>
+    <td align="center">11:41:06</td>
+    <td align="center">11:49:21</td>
+    <td NOWRAP>United States</td>
+    <td NOWRAP>New York</td>
+    <td NOWRAP>Nexus / AndroidOS</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','66.249.xxx.xxx','google-proxy-66-249-83-1.google.com','f146bb58d6',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_231">
+		<td align="center">1</td>
+		<td align="center">11:41:06</td>
+		<td align="center">11:41:06</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/kings-are-born-in-july-printed-t-shirt" target="_blank"><b>https://www.bargain.pk/kings-are-born-in-july-printed-t-shirt</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_24');"><b>10</b></a></td>
+    <td align="center">12:00:50</td>
+    <td align="center">23:33:53</td>
+    <td NOWRAP>Pakistan</td>
+    <td NOWRAP>Islamabad</td>
+    <td NOWRAP>iPhone / iOS</td>
+    <td class="vs" align="right"><div class="ico_info" onclick="showInfoBox('','4','1','39.33.xxx.xxx','39.33.xxx.xxx','78faa184fd',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_241">
+		<td align="center">1</td>
+		<td align="center">12:00:50</td>
+		<td align="center">12:01:28</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/" target="_blank"><b>https://www.bargain.pk/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_242">
+		<td align="center">2</td>
+		<td align="center">12:01:28</td>
+		<td align="center">12:02:12</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/vitamins_supplements/herbs" target="_blank"><b>https://www.bargain.pk/vitamins_supplements/herbs</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_243">
+		<td align="center">3</td>
+		<td align="center">12:02:12</td>
+		<td align="center">12:02:44</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/shop-by-solution/endurance" target="_blank"><b>https://www.bargain.pk/shop-by-solution/endurance</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_244">
+		<td align="center">4</td>
+		<td align="center">12:02:44</td>
+		<td align="center">12:03:10</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/top-supplements" target="_blank"><b>https://www.bargain.pk/top-supplements</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_245">
+		<td align="center">5</td>
+		<td align="center">12:03:10</td>
+		<td align="center">12:03:23</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/search/Natures%20bounty" target="_blank"><b>https://www.bargain.pk/search/Natures%20bounty</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_246">
+		<td align="center">6</td>
+		<td align="center">12:03:23</td>
+		<td align="center">12:04:30</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/health_care" target="_blank"><b>https://www.bargain.pk/health_care</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_247">
+		<td align="center">7</td>
+		<td align="center">12:04:30</td>
+		<td align="center">12:05:38</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/benice_portable_mini_slimming_massager_for_burning_extra_fat" target="_blank"><b>https://www.bargain.pk/benice_portable_mini_slimming_massager_for_burning_extra_fat</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_248">
+		<td align="center">8</td>
+		<td align="center">12:05:38</td>
+		<td align="center">12:06:35</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk//vitamins_supplements" target="_blank"><b>https://www.bargain.pk//vitamins_supplements</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_249">
+		<td align="center">9</td>
+		<td align="center">12:06:35</td>
+		<td align="center">12:08:05</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/natures_bounty_hair,_skin__nails_formula_5000mcg_biotin_250_softgels" target="_blank"><b>https://www.bargain.pk/natures_bounty_hair,_skin__nails_formula_5000mcg_biotin_250_softgels</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_2410">
+		<td align="center">10</td>
+		<td align="center">23:28:47</td>
+		<td align="center">23:28:47</td>
+		<td colspan="4"><!--lang_stats_browser--> 2:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/natures_bounty_hair,_skin__nails_formula_5000mcg_biotin_250_softgels" target="_blank"><b>https://www.bargain.pk/natures_bounty_hair,_skin__nails_formula_5000mcg_biotin_250_softgels</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_25');"><b>3</b></a></td>
+    <td align="center">16:23:11</td>
+    <td align="center">16:41:35</td>
+    <td NOWRAP>Saudi Arabia</td>
+    <td NOWRAP>Riyadh</td>
+    <td NOWRAP>Samsung / AndroidOS</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','188.248.xxx.xxx','188.248.xxx.xxx','bb6c6a2ee3',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_251">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">16:23:11</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.google.com/" target="_blank"><b>https://www.google.com/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_252">
+		<td align="center">1</td>
+		<td align="center">16:23:11</td>
+		<td align="center">16:24:11</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/vitamins_supplements/vitamins_a-z" target="_blank"><b>https://www.bargain.pk/vitamins_supplements/vitamins_a-z</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_253">
+		<td align="center">2</td>
+		<td align="center">16:24:11</td>
+		<td align="center">16:24:14</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/search/Now%20vitamin%20d3" target="_blank"><b>https://www.bargain.pk/search/Now%20vitamin%20d3</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_254">
+		<td align="center">3</td>
+		<td align="center">16:24:14</td>
+		<td align="center">16:24:14</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/vitamins_supplements/vitamins_a-z" target="_blank"><b>https://www.bargain.pk/vitamins_supplements/vitamins_a-z</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_26');"><b>1</b></a></td>
+    <td align="center">16:41:37</td>
+    <td align="center">20:04:51</td>
+    <td NOWRAP>United States</td>
+    <td NOWRAP>New York</td>
+    <td NOWRAP>Windows 10</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','69.171.xxx.xxx','69.171.xxx.xxx','a703a61f71',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_261">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">16:41:37</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.facebook.com/" target="_blank"><b>https://www.facebook.com/</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_262">
+		<td align="center">1</td>
+		<td align="center">16:41:37</td>
+		<td align="center">16:41:37</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/?fbclid=IwAR3YWuJofPlZlxsBZKldzg7G0TrliNFc9DSnLfhK76g9QXEuW5e3vxFxCWU" target="_blank"><b>https://www.bargain.pk/?fbclid=IwAR3YWuJofPlZlxsBZKldzg7G0TrliNFc9DSnLfhK76g9QXEuW5e3vxFxCWU</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_27');"><b>1</b></a></td>
+    <td align="center">20:04:54</td>
+    <td align="center">23:28:46</td>
+    <td NOWRAP>Barbados</td>
+    <td NOWRAP>Bridgetown</td>
+    <td NOWRAP>AndroidOS</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','69.73.xxx.xxx','69.73.xxx.xxx','9402ca83da',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_271">
+		<td align="center">&nbsp;</td>
+		<td align="center">&nbsp;</td>
+		<td align="center">20:04:54</td>
+		<td colspan="4">Referrer:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://pinterest.com/pin/851532242019834190/?source_app=android" target="_blank"><b>https://pinterest.com/pin/851532242019834190/?source_app=android</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_272">
+		<td align="center">1</td>
+		<td align="center">20:04:54</td>
+		<td align="center">20:13:52</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/" target="_blank"><b>https://www.bargain.pk/</b></a></td>
+	</tr>
+<tr>
+    <td align="center"><a href="javascript:switchRowVisibility('pl_28');"><b>2</b></a></td>
+    <td align="center">23:33:56</td>
+    <td align="center">00:33:04</td>
+    <td NOWRAP>Pakistan</td>
+    <td NOWRAP>Wazirabad</td>
+    <td NOWRAP>AndroidOS</td>
+    <td class="vn" align="right"><div class="ico_info" onclick="showInfoBox('','1','1','182.191.xxx.xxx','182.191.xxx.xxx','57e5d767f9',this); return true;"></div></td>
+</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_281">
+		<td align="center">1</td>
+		<td align="center">23:33:56</td>
+		<td align="center">23:33:56</td>
+		<td colspan="4"><!--lang_stats_browser--> 1:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/vitamins_supplements/multivitamins" target="_blank"><b>https://www.bargain.pk/vitamins_supplements/multivitamins</b></a></td>
+	</tr>
+	<tr style="display:none;" class="bt_values_url" id="pl_282">
+		<td align="center">2</td>
+		<td align="center">23:34:01</td>
+		<td align="center">23:34:01</td>
+		<td colspan="4"><!--lang_stats_browser--> 2:&nbsp;&nbsp;<a href="http://dereferrer.livezilla.info/?url=https://www.bargain.pk/vitamins_supplements/multivitamins" target="_blank"><b>https://www.bargain.pk/vitamins_supplements/multivitamins</b></a></td>
+	</tr>
+
+			</table>
+			<br>
+		</td>
+	</tr>
+</table>
+<script type="text/javascript">
+function showInfoBox(_isp, _visits, _visits_day, _ip, _host, _id, _parent)
+{
+if(ibCurrent != _parent)
+{
+document.getElementById("info_box").innerHTML = "<strong>ID:</strong> " + _id + "<br><strong><!--lang_stats_isp-->:</strong> " + _isp + "<br><strong>IP:</strong> " +_ip + "<br><strong>Host:</strong> " +_host + "<br><strong><!--lang_stats_visits-->:</strong> " + _visits + "<br><strong><!--lang_stats_visits_today-->:</strong> " + _visits_day;
+assignPosition(document.getElementById("info_box"));
+document.getElementById("info_box").style.display = "block";
+ibCurrent = _parent;
+}
+else
+{
+document.getElementById("info_box").style.display = "none";
+ibCurrent = null;
+}
+}
+</script>

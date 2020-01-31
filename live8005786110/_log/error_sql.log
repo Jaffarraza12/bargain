@@ -1,0 +1,64 @@
+12.11.18 06:08:58 - 1062: Duplicate entry 'd0' for key 'PRIMARY'
+
+SQL: INSERT INTO `feedback_criteria_config` (`id` ,`type` ,`name` ,`title`) VALUES ('d0','0','Knowledge','<!--lang_client_feedback_knowledge-->');
+
+12.11.18 06:08:58 - 1062: Duplicate entry 'd1' for key 'PRIMARY'
+
+SQL: INSERT INTO `feedback_criteria_config` (`id` ,`type` ,`name` ,`title`) VALUES ('d1','0','Friendliness','<!--lang_client_feedback_friendliness-->');
+
+12.11.18 06:08:58 - 1062: Duplicate entry 'd2' for key 'PRIMARY'
+
+SQL: INSERT INTO `feedback_criteria_config` (`id` ,`type` ,`name` ,`title`) VALUES ('d2','0','Responsiveness','<!--lang_client_feedback_responsiveness-->');
+
+12.11.18 06:08:58 - 1062: Duplicate entry 'd3' for key 'PRIMARY'
+
+SQL: INSERT INTO `feedback_criteria_config` (`id` ,`type` ,`name` ,`title`) VALUES ('d3','0','Overall','<!--lang_client_feedback_overall-->');
+
+12.11.18 06:08:58 - 1062: Duplicate entry 'd4' for key 'PRIMARY'
+
+SQL: INSERT INTO `feedback_criteria_config` (`id` ,`type` ,`name` ,`title`) VALUES ('d4','1','Comment','<!--lang_client_feedback_comment-->');
+
+19.11.18 07:48:04 - 2002: Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
+
+SQL: connect
+
+19.11.18 07:48:04 - 2002: Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
+
+SQL: connect
+
+07.01.19 01:05:10 - 2002: Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
+
+SQL: connect
+
+07.01.19 01:05:10 - 2002: Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
+
+SQL: connect
+
+07.01.19 01:05:16 - 2002: Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
+
+SQL: connect
+
+07.01.19 01:05:16 - 2002: Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
+
+SQL: connect
+
+07.01.19 01:05:16 - 2002: Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
+
+SQL: connect
+
+07.01.19 01:05:17 - 2002: Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
+
+SQL: connect
+
+08.10.19 22:37:05 - 2002: No such file or directory
+
+SQL: connect
+
+08.10.19 22:37:06 - 2002: No such file or directory
+
+SQL: connect
+
+08.10.19 22:37:06 - 2002: No such file or directory
+
+SQL: connect
+

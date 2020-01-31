@@ -1,0 +1,35 @@
+[19-Nov-2018 07:48:04 CST6CDT] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/bargain/public_html/live8005786110/_lib/objects.global.inc.php on line 7690
+[19-Nov-2018 07:48:04 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function MatchUser() on null in /home/bargain/public_html/live8005786110/_lib/functions.external.inc.php:133
+Stack trace:
+#0 /home/bargain/public_html/live8005786110/image.php(40): isChat()
+#1 {main}
+  thrown in /home/bargain/public_html/live8005786110/_lib/functions.external.inc.php on line 133
+[07-Jan-2019 01:05:10 CST6CDT] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/bargain/public_html/live8005786110/_lib/objects.global.inc.php on line 7690
+[07-Jan-2019 01:05:10 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function MatchUser() on null in /home/bargain/public_html/live8005786110/_lib/functions.external.inc.php:133
+Stack trace:
+#0 /home/bargain/public_html/live8005786110/image.php(40): isChat()
+#1 {main}
+  thrown in /home/bargain/public_html/live8005786110/_lib/functions.external.inc.php on line 133
+[07-Jan-2019 01:05:16 CST6CDT] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/bargain/public_html/live8005786110/_lib/objects.global.inc.php on line 7690
+[07-Jan-2019 01:05:16 CST6CDT] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/bargain/public_html/live8005786110/_lib/objects.global.inc.php on line 7690
+[07-Jan-2019 01:05:16 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function MatchUser() on null in /home/bargain/public_html/live8005786110/_lib/functions.external.inc.php:133
+Stack trace:
+#0 /home/bargain/public_html/live8005786110/image.php(40): isChat()
+#1 {main}
+  thrown in /home/bargain/public_html/live8005786110/_lib/functions.external.inc.php on line 133
+[07-Jan-2019 01:05:17 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function MatchUser() on null in /home/bargain/public_html/live8005786110/_lib/functions.external.inc.php:133
+Stack trace:
+#0 /home/bargain/public_html/live8005786110/image.php(40): isChat()
+#1 {main}
+  thrown in /home/bargain/public_html/live8005786110/_lib/functions.external.inc.php on line 133
+[08-Oct-2019 22:37:05 CST6CDT] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/bargain/public_html/live8005786110/_lib/objects.global.inc.php on line 7690
+[08-Oct-2019 22:37:06 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function MatchUser() on null in /home/bargain/public_html/live8005786110/_lib/functions.external.inc.php:133
+Stack trace:
+#0 /home/bargain/public_html/live8005786110/image.php(40): isChat()
+#1 {main}
+  thrown in /home/bargain/public_html/live8005786110/_lib/functions.external.inc.php on line 133
+[08-Oct-2019 22:37:06 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function MatchUser() on null in /home/bargain/public_html/live8005786110/_lib/functions.external.inc.php:133
+Stack trace:
+#0 /home/bargain/public_html/live8005786110/image.php(40): isChat()
+#1 {main}
+  thrown in /home/bargain/public_html/live8005786110/_lib/functions.external.inc.php on line 133
