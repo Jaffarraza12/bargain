@@ -1,0 +1,20 @@
+{{ header }}
+<div class="full-width">
+	<div id="common-home" class="container">
+        {{ content_top }}
+	</div>
+</div>
+<div class="full-width">
+	<div id="common-home" class="container">
+		<div class="row">
+			<div class="col-sm-9 col-xs-12">{{ column_left }}</div>
+			<div class="col-sm-3 col-xs-12">{{ column_right }}</div>
+			<div  class="{{ class }}"></div>
+		</div>
+        {% include 'ceptz/template/custom/department-categories-block.twig'  %}
+
+	</div>
+    {% include 'ceptz/template/custom/department-block.twig'  %}
+</div>
+</div>
+{{ footer }}

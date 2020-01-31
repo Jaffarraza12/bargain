@@ -1,0 +1,73 @@
+<div class="box" id="newsletter" >
+	<div class="abd-warning alert-warning"></div>
+	<div class="abd-success alert-success"></div>
+	<div class="box-heading">{{ 'Newsletter' }}</div>
+	<div class="strip-line"></div>
+	<div class="box-content-jr">
+		<div class="input-group margin-bottom-sm">
+			<span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+			<input id="email-newsletter"  class="form-control" type="text" class="email" placeholder="{{ 'admin@example.com' }}" />
+			<a class="subscribe" >{{ 'Sign Up' }}</a>
+		</div>
+		<div class="exclusive">
+			<h5><{{ 'Exclusive Offer' }}</h5>
+		</div>
+	</div>
+
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+	function Subscribe(elem) {
+	      email_value = $('#email-newsletter').val()
+
+        $.post('index.php?route=extension/module/newsletter/subscribe',
+			{
+				email: email_value
+			}, function (e) {
+				if(e.error > 1) {
+				    $('.abd-warning').html(e.message)
+
+				} else {
+					$('#newsletter121 .email').val('');
+					$('#email-newsletter').val('');
+                    $('.abd-success').html(e.message);
+				}
+			}
+		, 'json');
+	}
+	function SubscribeML(elem) {
+        $(".annonce").hide().html('')
+		email_value = $('[name="emailML"]').val()
+        console.log(email_value)
+		$.post('index.php?route=extension/module/newsletter/subscribe',
+			{
+				email: email_value
+			}, function (e) {
+		    	if(e.error > 1) {
+				    $('#news-unsub-dsq26').html(e.message)
+
+				} else {
+					$('#newsletter.email').val('');
+					$('#email-newsletter').val('');
+                    $('#news-sub-dsq26').html(e.message);
+				}
+                $(".annonce").show()
+
+			}
+		, 'json');
+	}
+
+	$('.subscribe').click(function() {
+        Subscribe($(this))
+    });
+	$('.subscribeML').click(function() {
+        SubscribeML($(this))
+    });
+
+	$('#newsletter .email').keypress(function (e) {
+	    if (e.which == 13) {
+	        Subscribe();
+	    }
+	});
+});
+</script>

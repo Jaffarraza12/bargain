@@ -1,0 +1,18 @@
+<div class="full-width banner_grid">
+<div class="container">
+<div class="row">
+
+    <div class="col-sm-3">
+        <h2>{{ heading }}</h2>
+        <a href="{{ link  }}" class="banner-grid-button">SHOP NOW</a>
+        <img src="{{ banner }}" /> </div>
+    <div class="col-sm-9 product-grid unClear">
+        {% for product in products %}
+            <div class="col-sm-3  col-xs-6">
+            {% include 'ceptz/template/item/product.twig' with product %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+</div>
+</div>

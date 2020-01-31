@@ -1,0 +1,14 @@
+<div class="custom-curosel">
+<div class="container">
+    {% if products %}
+    <h1 class="CenterAlign" style="font-size: 24px; ">{{ 'NEW ARRIVAL' }}</h1>
+<div class="owl-carousel owl-theme product-grid carve-latest-grid">
+    {% for product in products %}
+        <div class="item">
+            {% include 'ceptz/template/item/product.twig' with product %}
+        </div>
+    {% endfor %}
+</div>
+    {%  endif %}
+</div>
+</div>

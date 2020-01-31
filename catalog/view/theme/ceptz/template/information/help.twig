@@ -1,0 +1,347 @@
+{{ header }}
+<div class="full-width">
+
+  <div id="information-information" class="container">
+
+  <div class="row">
+
+    <div id="content" class="{{ class }} col-sm-12 help_content">
+        {% include 'ceptz/template/custom/breadcrumb.twig' %}
+        <h1 class="CenterAlign"><icon class="fa fa-handshake-o "></icon> {{ heading_title }}</h1>
+
+        <p class="CenterAlign">Find everything you need to know about your online shopping experience</p>
+       <icon class="fa fa-tru"></icon>
+        {% for link in links %}
+            <div class="col-sm-2 col-sm-6">
+               <div class="tiles scrollDown">
+                   <icon class="tab {{ link.icon }}"  data-tab="{{ link.tab }}"></icon>
+                   <a class="tab " data-tab="{{ link.tab }}">{{ link.name }}</a>
+               </div>
+            </div>
+
+        {% endfor %}
+        <div class="clearfix"></div>
+        <div class="tabWrapper">
+            <div id="tab-order" class="tabContent" >
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#order_question_1" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed">I want to return my order! What do I do?   <i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="order_question_1">
+                            <div class="panel-body">
+                                <p>Simply email, call or Whatsapp with your order# and product information explaining the reason for return. If you want to exchange an item, please writewhich item you’d like to exchange it with. Once we receive the details, our customer representative will get in touch with you to expedite the process.</p>
+                                <p>For majority of returns, it takes about 5-7 Business days( Monday to Friday) for us to get your package, examineyour return, process it and ship your exchange orders. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#order_question_2" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed">What is your return &amp; exchange policy?     <i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="order_question_2" style="height: 0px;">
+                            <div class="panel-body">
+                                <p>Sorry, but you cannot return your Gift Cards for cash. Please call Bargain.pk customer serviceto discuss your options.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#order_question_3" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed">What if my item is out of stock?    <i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="order_question_3" style="height: 0px;">
+                            <div class="panel-body">
+                                <p>
+                                    If an item is out of stock the Bargain.pk Customer Service Team will notify you as soon as possible. For regular stock items, you can either get a replacement item or wait for an item to get in the stock. For discontinued items, you can get a replacement item or cancel your order.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#order_question_4" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed">Do you have a catalog?  <i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="order_question_4" style="height: 0px;">
+                            <div class="panel-body">
+                                <p>
+                                    For now, we don’t have any printed catalog. However, we occasionally print flyers and include in your orders.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#order_question_5" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed">Are there any hidden charges when I make a purchase on Bargain.pk?  <i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="order_question_5" >
+                            <div class="panel-body">
+                                <p>
+                                    All orders shipping within Pakistan have nohidden charges. The order amount is inclusive of all taxes, shipping& handing fees.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#order_question_6" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed">I tried to check out and the item in my shopping cart disappeared, what happened?<i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="order_question_6" >
+                            <div class="panel-body">
+                                <p>
+                                    We are sorry that you were not able to complete your order. There could be either a system glitch or items is out of stock. Please contact us and we will be happy to resolve your issue as soon as possible.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#order_question_7" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed">Is the item I want going to go on sale soon?<i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="order_question_7" >
+                            <div class="panel-body">
+                                <p>
+                                    We don’t announce sales events to individual customers. Sometimes, we either advertise our sales events or email promotions to subscribers. Moreover, our customer service team does not know if an item will go on sale or be marked down until it actually happens.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#order_question_8" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed">My email address has changed. How do I update this information to my current account?<i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="order_question_8" >
+                            <div class="panel-body">
+                                <p>
+                                    Please contact us with your new email address. Our admins will able to update your email address in the system after verifying your account.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#order_question_9" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed">The item I want is out of stock. What do I do now?<i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="order_question_9" >
+                            <div class="panel-body">
+                                <p>
+                                    Please contact us and we will be able to give you an exact detail regarding the availability of your desired items.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#order_question_10" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed">What can cause my order to be delayed?<i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="order_question_10" >
+                            <div class="panel-body">
+                                <p>
+                                    <ol>
+                                        <li>If the billing information you provided does not match what your bank has on file (including address and telephone number), your order may be delayed.</li>
+                                        <li>We all love sending gifts to others and ourselves as much as we love receiving them. However, if you are shipping to an address other than your billing address, your order may be delayed.
+                                        </li>
+                                        <li>Logistics company has delay on their end.</li>
+                                     </ol>
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#order_question_11" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed">What are cookies? Do I need to enable cookies on my browser?<i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="order_question_11" >
+                            <div class="panel-body">
+                                <p>A cookie is a small amount of data that is sent to your browser from a web site and is stored on your computer's hard drive. If your browser's preferences allow it (most browsers are installed with cookies enabled), each web site can send its own cookie to your browser. To protect your privacy, cookies do not store personal information but instead use anonymous unique identifiers. Each web site can only access the cookie they have sent to your hard drive, not the cookies sent by other web sites.
+                                </p>
+                                <p>You need to enable cookies on your browser to enjoy all the shopping features on Bargain.pk.com. Cookies need to be enabled on your browser so you can add products to your shopping cart and to access your account information. If you share your computer with others and you do not want them to have access to your account information, be sure to log out before leaving your computer unattended. You can log out by clicking on "Logout" link at the top of the page.
+                                    For more information about how we use cookies, See Our Privacy Policy.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#order_question_12" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed">When placing an order I get an error message stating that there has been an authorization failure. What went wrong?<i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="order_question_12" >
+                            <div class="panel-body">
+
+                                <p>Please double check the credit card number and expiration date on your card. Also, please be aware that Bargain.pk.com currently accepts Visa and MasterCard for credit card payment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#order_question_13" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed">My order value is more than my voucher amount. What do I do now?<i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="order_question_13" >
+                            <div class="panel-body">
+
+                                <p>If your Gift Card value is less than the order amount, you’ll be asked to select an additional payment method to complete the payment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#order_question_14" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed">Do I need to pre-pay for my product when I order it?<i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="order_question_14" >
+                            <div class="panel-body">
+
+                                <p>Pre-payment is 100% safe and easy. However, Bargain also offers you the possibility to pay through Cash On Delivery (CoD). With CoD, you can pay in cash to the delivery agent upon receipt of your order.</p>
+                                <p>
+                                    Note
+                                    <ol>
+                                        <li>Some Items may not be available for CoD</li>
+                                        <li>The maximum order value for CoD is 100,000 PKR</li>
+                                        <li>Gift cards or vouchers cannot be used to make CoD payments</li>
+                                     </ol>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-money" class="tabContent" style="display:none;">
+                <div class="panel-group" id="accordion2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#payment-question_1" data-toggle="collapse" data-parent="#accordion2" class="accordion-toggle collapsed">Do you accept international credit cards?   <i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="payment-question_1" >
+                            <div class="panel-body">
+                                <p>Currently at Bargain.pk.com we do not accept international credit cards. You can choose to pay via local credit cards and debit cards (Jazzcash), bank transfers or choose a COD option. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#payment-question_3" data-toggle="collapse" data-parent="#accordion2" class="accordion-toggle collapsed">What forms of payment do you accept?   <i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="payment-question_3" >
+                            <div class="panel-body">
+                                <p>Bargain.pk.com currently accepts Debit Cards, Credit Cards< Bank Transfer, Gif Card and Cash on Delivery payments.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="tab-return" class="tabContent" style="display:none;">
+                <div class="panel-group" id="accordion3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#return-question_1" data-toggle="collapse" data-parent="#accordion3" class="accordion-toggle collapsed">What is your return, exchange and refund policy?   <i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="return-question_1" style="height: 0px;">
+                            <div class="panel-body">
+                                <p>Different items have different return policies. </p>
+                                <p>Any open box/container of supplements and healthcare items are not eligible for either return or exchange. If the box or container is unsealed and you are not 100% satisfied with your purchase from Bargain you can return your item(s) for  an exchange or refund within 30 days of purchase. </p>
+                                <p>For stock clothing items; returns must be unworn, in the state you received them, and in the original packaging. Any item with the signs of wear would not be refunded. Kindly make sure you follow the guidelines and policies to get you money back.  </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#return-question_2" data-toggle="collapse" data-parent="#accordion3" class="accordion-toggle collapsed">I want to return my order! What do I do?   <i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="return-question_2" style="height: 0px;">
+                            <div class="panel-body">
+                                <p>Simply email, call or Whatsapp with your order# and product information explaining the reason for return. If you want to exchange an item, please write which item you’d like to exchange it with. Once we receive the details, our customer representative will get in touch with you to explain the process. </p>
+                                <p>For majority of returns, it takes about 5-7 Business days( Monday to Friday) for us to get your package, examine your return, process it and ship your exchange orders.  </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="tab-deliver" class="tabContent" style="display:none;">
+                <div class="panel-group" id="accordion4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#deliver-question_1" data-toggle="collapse" data-parent="#accordion4" class="accordion-toggle collapsed">What if my package or item is open and product seal broken on delivery?   <i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="deliver-question_1" >
+                            <div class="panel-body">
+                                <p>Do not accept the package, if you find it either open, damaged or product seal is broken. Always refuse open packages. Using your mobile phone take a picture of broken package as well. If you do accept an open, tempered or damaged package by mistake, please contact us immediately. We don’t accept open packages for any food or supplement items. Therefore, it is your responsibility to check everything on delivery. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#deliver-question_2" data-toggle="collapse" data-parent="#accordion4" class="accordion-toggle collapsed">I missed my delivery. What happens now? <i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="deliver-question_2" >
+                            <div class="panel-body">
+                                <p>Please, contact us and will communicate with the courier company for 2nd attempt. Usually, the local couriers make maximum of three attempts before returning your items to our warehouse.  </p>
+                                <p>Once we receive your order in our warehouse, we are going to cancel your order and refund <t></t>he money after deducting shipping charges. </p>
+                                <p>If you want us to reship the package, an additional shipping cost will be added to you order.</p>
+                                <p>For COD orders, we will not going to reship any cancel orders without getting the payment first.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#deliver-question_3" data-toggle="collapse" data-parent="#accordion4" class="accordion-toggle collapsed">Will somebody contact me before delivering the package to my location? <i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="deliver-question_3" >
+                            <div class="panel-body">
+                                <p>Usually, the couriers, riders or and logistic companies call you before making a delivery. You can also call them and confirm the delivery exact location and time.  </p>
+                                   </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#deliver-question_4" data-toggle="collapse" data-parent="#accordion4" class="accordion-toggle collapsed">My parcel has been reported missing. What to do now? <i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="deliver-question_4" >
+                            <div class="panel-body">
+                                <p>We are here to help you. You do not need to worry about it. We are going to take care of any unfortunate incidents such as lost or missing packages with our logistics partners.  This process might take 1-2 extra days. However, we will make sure that you will receive your items hassle-free at no extra cost.  </p>
+                                   </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-secure" class="tabContent" style="display:none;">
+                <div class="panel-group" id="accordion5">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#secure-question_2" data-toggle="collapse" data-parent="#accordion5" class="accordion-toggle collapsed">Is it safe to use my credit card on your site?   <i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="secure-question_2" >
+                            <div class="panel-body">
+                                <p>Yes! We use Jazzcash and other 3rd party payment portals for payment processing. That’s why, it is 100% secure to pay us thru credit or debit card. We at Bargain.pk don’t collect and store any payment related details in our system. Moreover, our site run on Https protocol, which enable us to encrypt all of your data transfers save and secure.</p>
+                            </div>
+                        </div>
+                    </div>
+
+             </div>
+            </div>
+            <div id="tab-privacy" class="tabContent" style="display:none;">
+                <div class="panel-group" id="accordion6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a href="#secure-question_2" data-toggle="collapse" data-parent="#accordion5" class="accordion-toggle collapsed">Is it safe to use my credit card on your site?   <i class="fa fa-caret-down"></i></a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="secure-question_2" >
+                            <div class="panel-body">
+                                <p>Yes! We use Jazzcash and other 3rd party payment portals for payment processing. That’s why, it is 100% secure to pay us thru credit or debit card. We at Bargain.pk don’t collect and store any payment related details in our system. Moreover, our site run on Https protocol, which enable us to encrypt all of your data transfers save and secure.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="clearfix"></div>
+ </div>
+</div>
+</div>
+{{ footer }}

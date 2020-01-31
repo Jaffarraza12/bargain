@@ -1,0 +1,1 @@
+$(function(){$('.email-service').hover(function(){$(this).clearQueue();$(".PosEmailService").fadeIn()},function(){$(this).clearQueue();$(".PosEmailService").hide()})});$('.open-popup-link').magnificPopup({type:'inline',midClick:true});$(document).on('click','.closePopup',function(e){e.preventDefault();$.magnificPopup.close();});

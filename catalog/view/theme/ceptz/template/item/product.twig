@@ -1,0 +1,68 @@
+<div class="product clearfix product-hover {% if right %} createrRight {% endif %} ">
+
+    {%  if product.batch %}
+        <div class="product-batch"></div>
+    {%  endif %}
+    {%  if product.deal %}
+        <div class="product-batch-deal"></div>
+    {%  endif %}
+    {%  if product.hotbuy %}
+        <div class="product-batch-hot"></div>
+    {%  endif %}
+
+    {%  if product.video_id %}
+        <div class="product-video-icon"></div>
+    {%  endif %}
+    <div class="left">
+        {% if percentage != 100 %}
+            <div class="sale">
+                {{ percentage|round  }}%
+            </div>
+        {% endif %}
+
+    <div class="image image-swap-effect
+        {%  if  product.is_shoot %}
+            {{ 'is_shoot' }}
+         {% elseif product.is_zoom %}
+            {{ 'img-zoom-effect' }}
+         {% endif %} " >
+      <a href="{{ product.href }}">
+          {% if product.ampImage == 1 %}
+              <amp-img src="{{ product.thumb }}" alt="{{ product.name }}" class="{{ (product.is_shoot) ? 'is_shoot' : '' }}"  width="228" height="304" layout="responsive">
+                  <i-amphtml-sizer style="display: block;"></i-amphtml-sizer>
+              </amp-img>
+          {%  else %}
+              <img src="{{ product.thumb }}" alt="{{ product.name }}"  width="228" height="228" />
+          {%  endif %}
+      </a>
+    </div>
+  </div>
+  <div class="right">
+    <div class="name {{ (product.fill_mobile_view) ? 'single_row' : '' }}"><a href="{{ product.href }}">{{ product.name }}</a></div>
+
+
+    <div class="price">
+        {%  if product.special  %}
+        <span class="hot-price hot-price-new">{{ product.special }}</span>
+        <span class="hot-price hot-price-old">{{ product.price }}</span>
+        <span class="hot-price hot-price-save">You Save:{{ product.save}}</span>
+        {%  else %}
+          {{ product.price }}
+       {% endif %}
+    </div>
+      <div class="clearfix"></div>
+      {% for i in 5 %}
+          {% if product.rating == i %}
+            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+          {% else %}
+            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+          {% endif %}
+      {% endfor %}
+      {% if product.rating %}
+        <div class="rating"><i class="fa fa-star {% if product.rating >= 1 %} {{  ' active' }} {% endif %}"></i><i class="fa fa-star{% if product.rating >= 2 %} {{  ' active' }} {% endif %}"></i><i class="fa fa-star{% if product.rating >= 3 %} {{  ' active' }} {% endif %}"></i><i class="fa fa-star{% if product.rating >= 4 %} {{  ' active' }} {% endif %}"></i><i class="fa fa-star{% if product.rating >= 5 %} {{  ' active' }} {% endif %}"></i></div>
+      {% else %}
+        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+      {% endif %}
+
+  </div>
+</div>

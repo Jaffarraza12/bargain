@@ -1,0 +1,68 @@
+<div id="cart" class="btn-group btn-block">
+  <div class="cart-heading" >
+    <div class="cart-icon"></div>
+     <div id="cartPOS" >  <a href="{{ 'cart' }}">
+      <button class="btn-lg btn-link" >
+
+        <div class="demo_svg" title="i_shopping_bag">
+        <icon class="i_cart"></icon>
+          <span class="totip">  CART</span>
+         </div>
+
+
+      </button></a>
+       <span class="badge badge-notify">{{text_items_count}} </span>
+    </div>
+   </div>
+  <div class="cart_html pull-right hidden">
+  <ul class="">
+    {% if products or vouchers %}
+    <li>
+      <table class="table table-striped hidden">
+        {% for product in products %}
+        <tr>
+          <td class="text-center">{% if product.thumb %} <a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-thumbnail" /></a> {% endif %}</td>
+          <td class="text-left"><a href="{{ product.href }}">{{ product.name }}</a> {% if product.option %}
+            {% for option in product.option %} <br />
+            - <small>{{ option.name }} {{ option.value }}</small> {% endfor %}
+            {% endif %}
+            {% if product.recurring %} <br />
+            - <small>{{ text_recurring }} {{ product.recurring }}</small> {% endif %}</td>
+          <td class="text-right">x{{ product.quantity }}</td>
+          <td class="text-right">{{ product.total }}</td>
+          <td class="text-center"><button type="button" onclick="cart.remove('{{ product.cart_id }}');" title="{{ button_remove }}" class="btn-danger btn-xs"><i class="fa fa-times"></i></button></td>
+        </tr>
+        {% endfor %}
+        {% for voucher in vouchers %}
+        <tr>
+          <td class="text-center"></td>
+          <td class="text-left">{{ voucher.description }}</td>
+          <td class="text-right">x1</td>
+          <td class="text-right">{{ voucher.amount }}</td>
+          <td class="text-center text-danger"><button type="button" onclick="voucher.remove('{{ voucher.key }}');" title="{{ button_remove }}" class="btn btn-danger btn-xs"><i class="fa fa-times"></i></button></td>
+        </tr>
+        {% endfor %}
+      </table>
+    </li>
+    <li>
+      <div>
+        <table class="table table-bordered hidden">
+          {% for total in totals %}
+          <tr>
+            <td class="text-right"><strong>{{ total.title }}</strong></td>
+            <td class="text-right">{{ total.text }}</td>
+          </tr>
+          {% endfor %}
+        </table>
+        <h3 class="CenterAlign"><label>{{ totals[totals|length-1].title }} :</label>{{ totals[totals|length-1].text }}</h3>
+        <p class="text-right"><a class="btn btn-delme" href="/cart"><strong><i class="fa fa-shopping-cart"></i> {{ text_cart }}</strong></a>&nbsp;&nbsp;&nbsp;<a class="btn btn-danger" href="/checkout"><strong><i class="fa fa-share"></i> {{ text_checkout }}</strong></a></p>
+      </div>
+    </li>
+    {% else %}
+    <li>
+      <p class="text-center">{{ text_empty }}</p>
+    </li>
+    {% endif %}
+  </ul>
+</div>
+</div>

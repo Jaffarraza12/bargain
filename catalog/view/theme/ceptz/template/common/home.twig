@@ -1,0 +1,71 @@
+{{ header }}
+<div class="full-width">
+<div id="common-home" class="container">
+{{ content_top }}
+</div>
+</div>
+<div class="full-width">
+<div id="common-home" class="container">
+{% include 'ceptz/template/custom/tees-newsletter.twig'  %}
+    {%  if deal_products %}
+        <div class="row">
+            <div class="hot-buy-header-container hot-buy-mini-header-container">
+            	  <h2 class="centerAlign"><icon class="fa fa-tag"></icon> DEAL OF THE DAY</h2>
+                  <p class="centerAlign">Take advantage on these last minutes savings!   </p>
+             </div>
+            <div class="custom-curosel">
+                <div class="container">
+                    <div class="owl-carousel owl-theme product-grid category_products">
+                        {% for product in deal_products %}
+                            <div class="item">
+                                {% include 'ceptz/template/item/dealproduct.twig' with product %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <a class="Block CenterAlign bottom-link"  href="deals">VIEW ALL</a>
+                </div>
+             
+            </div>
+        </div>
+    {% endif %}
+    {% if  hotbuy_products %}
+        <div class="row">
+            <div class="hot-buy-header-container hot-buy-mini-header-container">
+
+                <h1 ><icon class="fa fa-fire"></icon> {{ 'HOT BUYS' }}</h1>
+                <p>Upto 40% Discount on Selected items valid upto {{ date }}</p>
+            </div>
+            <div class="custom-curosel">
+                <div class="container">
+                    <div class="owl-carousel owl-theme product-grid category_products">
+                        {% for product in hotbuy_products %}
+                            <div class="item">
+                                {% include 'ceptz/template/item/hotproduct.twig' with product %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                        <a class="Block CenterAlign bottom-link"  href="hotbuy">VIEW ALL</a>
+                </div>
+
+            </div>
+        </div>
+    {% endif %}
+
+
+    {% include 'ceptz/template/custom/home-depart-block.twig'  %}
+<div id="content1" class="{{ class }}">
+{{column_left }}
+</div>
+<div id="content" class="{{ class }}">
+{{ content_bottom }}
+</div>
+    <div class="clearfix"></div>
+
+
+
+<div class="white-background">
+{% include 'ceptz/template/custom/full-width-right-banner.twig'  %}
+ {% include 'ceptz/template/custom/department-block.twig'  %}
+</div>
+</div>
+{{ footer }}

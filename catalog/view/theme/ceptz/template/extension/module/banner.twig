@@ -1,0 +1,39 @@
+<div class="swiper-viewport SMhidden">
+  <div id="banner{{ module }}" class="swiper-container">
+    <div class="swiper-wrapper">{% for banner in banners %}
+      <div class="swiper-slide">{% if banner.link %}
+        <a href="{{ banner.link }}">
+          <amp-img src="{{ banner.image }}" alt="{{ banner.title }}"  width="{{ width }}" height="{{ height }}" layout="responsive">
+            <i-amphtml-sizer style="display: block;"></i-amphtml-sizer>
+          </amp-img>
+          </a>
+          {% else %}
+            <amp-img src="{{ banner.image }}" alt="{{ banner.title }}"  width="{{ width }}" height="{{ height }}" layout="responsive">
+              <i-amphtml-sizer style="display: block;"></i-amphtml-sizer>
+            </amp-img>
+          {% endif %}
+      </div>
+      {% endfor %}</div>
+  </div>
+</div>
+
+
+
+<div class="swiper-viewport MDhidden PADhidden">
+  <div id="banner{{ module }}_mbl" class="swiper-container">
+    <div class="swiper-wrapper">{% for banner in banners %}
+        <div class="swiper-slide">{% if banner.link %}
+            <a href="{{ banner.link }}">
+              <amp-img src="{{ banner.mbl_image }}" alt="{{ banner.title }}"  width="{{ mbl_width }}" height="{{ mbl_height }}" layout="responsive">
+                <i-amphtml-sizer style="display: block;"></i-amphtml-sizer>
+              </amp-img>
+            </a>
+            {% else %}
+              <amp-img src="{{ banner.mbl_image }}" alt="{{ banner.title }}"  width="{{ mbl_width }}" height="{{ mbl_height }}" layout="responsive">
+                <i-amphtml-sizer style="display: block;"></i-amphtml-sizer>
+              </amp-img>
+            {% endif %}
+        </div>
+        {% endfor %}</div>
+  </div>
+</div>

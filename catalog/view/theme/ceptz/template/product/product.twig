@@ -1,0 +1,871 @@
+{{ header }}
+<style>
+    .mfp-move-from-top.mfp-ready.mfp-bg{
+        opacity: 0.5;
+    }
+    .mfp-move-from-top .mfp-content {
+        vertical-align: bottom;
+        bottom: 100px;
+    }
+    .mfp-move-from-top .mfp-with-anim {
+        opacity: 0;
+        transition: all 0.2s;
+        transform: translateY(-100px);
+    }
+    .mfp-move-from-top.mfp-bg {
+        opacity: 0;
+        transition: all 0.2s;
+    }
+    .mfp-move-from-top.mfp-ready .mfp-with-anim {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .mfp-move-from-top.mfp-ready.mfp-bg {
+        opacity: 0.8;
+    }
+    .mfp-move-from-top.mfp-removing .mfp-with-anim {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    .mfp-move-from-top.mfp-removing.mfp-bg {
+        opacity: 0;
+    }
+</style>
+<div class="full-width">
+<div  class="container">
+    <div class="product-bread">{% include 'ceptz/template/custom/breadcrumb.twig' %}</div>
+    <h1 class="productTitle">{{ heading_title }} </h1>
+<span  class="hidden">{{ heading_title }}</span>
+<div class="product-info box">
+<div class="row">
+            <div class="col-sm-12">
+                <div class="row" id="quickview_product" style="margin-left: -10px;">
+                    <div class="main-content full-width inner-page">
+                        <div class="background-content"></div>
+                        <div class="">
+                            <div class="shadow"></div>
+                            <div class="pattern">
+                                <div class="container">
+                                    <div class="">
+                                        {% if reward %}
+                                        <div class="col-sm-2 col-xs-12 NoPadding"><span class="">{{ text_reward }}</span> {{ reward }}</div>
+                                        {% endif %}
+                                        <div class="col-sm-2 col-xs-12 hidden" style="padding-left: 0px;"><span class="">{{ text_stock  }}</span> {{ stock }} </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="row" >
+                            {% if images or  video_id %}
+                            <div class="col-sm-2 SMhidden PADhidden">
+                                <div class="background NoPadding lessMargin">
+                                    <div class=" thumbnails2 thumbnails-left clearfix">
+                                        <ul>
+                                            {% for image in images %}
+                                                <li class="image-additional"><p><a class="popup-image" data-image="{{ image.popup }}" data-zoom-image="{{ image.popup }}" href="{{ image.popup }}" title="{{ heading_title }}">
+                                                     <amp-img src="{{ image.thumb }}" alt="{{ heading_title }}" title="{{ heading_title }}"  width="74" height="74" ></amp-img>
+                                                    </a></p></li>
+                                            {% endfor %}
+                                        </ul>
+
+
+                                    </div>
+                                    {% if video_id %}
+                                    <div class=" thumbnails-left clearfix">
+                                        <ul>
+                                            <li style="list-style: none;margin-left: -10px;cursor: pointer;"><a onclick="$('html, body').animate({scrollTop:$('.video_class').offset().top}, '500', 'swing');"><img src="/catalog/view/image/youtube.png" /> </a></li>
+                                        </ul>
+
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            {% endif %}
+                            <div class="col-sm-{{ (images or  video_id) ? '10' : '12' }} tab-full-width">
+                                 {% if thumb %}
+                                <div class="product-image cloud-zoom">
+                                    {%  if video_id %}
+                                        <div class="MDhidden" style="position: absolute;right: 22px;bottom:40px;" onclick="$('html, body').animate({scrollTop:$('.video_class').offset().top}, '500', 'swing');"><a onclick="$('html, body').animate({scrollTop:$('.video_class').offset().top}, '500', 'swing');"><img src="/catalog/view/image/youtube.png" /> </a>
+                                        </div>
+                                    {%  endif %}
+                                    <div class="">
+                                        {% if review_status  %}
+                                            <div class="review">
+                                                {% if rating > 0 %}
+                                                    <span itemprop="review" class="hidden" itemscope itemtype="http://data-vocabulary.org/Review-aggregate">
+														<span itemprop="itemreviewed">{{ heading_title }}</span>
+														<span itemprop="rating">{{ rating }}</span>
+														<span itemprop="votes"> </span>
+													</span>
+                                                {% endif %}
+                                                <div class="rating">
+                                                    <div><i class="fa fa-star{% if rating >= 1 %}  active {% endif %}"></i><i class="fa fa-star{% if rating >= 2 %}  active {% endif %}"></i><i class="fa fa-star{% if rating >= 3 %}  active {% endif %}"></i><i class="fa fa-star{% if rating >= 4 %}  active {% endif %}"></i><i class="fa fa-star{% if rating >= 5 %}  active {% endif %}"></i></div>&nbsp;&nbsp;&nbsp;
+                                                    <a style="display: inline;text-decoration: underline;" onclick="$('html, body').animate({scrollTop:$('#revJR').offset().top}, '500', 'swing');">{{ reviews }}</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a style="display: inline;text-decoration: underline" href="#test-popup" class="open-popup-link">{{ text_write  }}</a></div>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                    {% if special %}
+                                          <div class="sale">{{ percentage|round  }} %</div>
+                                    {% endif %}
+                                    <a class="popup-me-up SMhidden " data-image="{{ popup }}" data-zoom-image="{{ popup }}" href="{{ popup  }}" title="{{ heading_title }}">
+                                        <img src="{{ thumb }}" alt="{{ product.name }}"  />
+                                    </a>
+                                    <div class="MDhidden PADhidden relative">
+                                        <div class="enlarge" style="position: absolute;right:50px;z-index: 26">
+                                                   <a href="mobile-view-{{ product_id }}" class="pointer;"><icon style="font-size: 22px;" class="fa fa-search-plus"> </icon></a>
+                                        </div>
+                                        <div >
+                                            <div class="owl-carousel owl-theme product_image_mbl ">
+
+                                                {% for product in product_images %}
+                                                    <div class="item">
+                                                        {% include 'ceptz/template/item/product_images.twig' with product %}
+                                                    </div>
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% else %}
+                                <div class="product-image">
+                                    <img src="image/no_image.jpg" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive" id="image" itemprop="image" />
+                                </div>
+                                {% endif %}
+                            </div>
+                            {% if images %}
+                                <div class="col-xs-12 hidden  mbl-images">
+                                    <div class="background NoPadding">
+                                        <div class="thumbnails thumbnails-left clearfix">
+                                            <ul>
+                                                {% for image in images %}
+                                                    <li class="image-additional"><p><a class="popup-image" data-image="{{ image.popup }}" data-zoom-image="{{ image.popup }}" href="{{ image.popup }}" title="{{ heading_title }}">
+                                                                <amp-img src="{{ image.thumb }}" alt="{{ heading_title }}" title="{{ heading_title }}"  width="74" height="74" ></amp-img>
+                                                            </a></p></li>
+                                                {% endfor %}
+
+
+                                            </ul>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            {% endif %}
+
+                        </div>
+                        <a id="zoomer " class="pointer hidden TextRight">Click For Zoom</a>
+
+                    </div>
+
+                    <div class="col-sm-5 product-center clearfix">
+
+
+                        <div class="prodetailContainer">
+                            <div class="description DetailPrice">
+                                {% if price %}
+                                <div class="price">
+                                    {% if not special %}
+                                        <span class="price-new"><span itemprop="price" id="price-old">{{ price }}</span></span>
+                                    {% else %}
+                                         <span  itemprop="price" class="price-new">{{ special }}</span> <span id="price-old" class="price-old">{{ price }}</span>
+                                    {% endif %}
+                                    <br />
+                                    {% if tax %}
+                                        <span class="price-old" style="text-decoration: none">{{ text_tax }} {{ tax }}</span>
+                                    {% endif %}
+
+                                    {% if discount %}
+                                    <br />
+                                    <div class="discount">
+                                        {% for discount in discounts %}
+                                            <li>{{ discount.quantity }}{{ text_discount }}{{ discount.price }}</li>
+                                        {% endfor %}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                {% endif %}
+                                {% if  short_description %}
+                                    <!-- Short Desciption-->
+                                    <div class="clearfix shortDesc" >
+                                        <div class="TextLeft NoPadding">
+                                            {{ short_description }}
+                                            <a class="pointer viewDetail" onclick="$('html, body').animate({scrollTop:$('#desi_cription').offset().top}, '500', 'swing');" >view details</a>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            </div>
+
+                            <div id="product">
+                                {% if designs|length > 1 %}
+                                <div class="form-group">
+                                    <label style="display: none;" class="control-label" for="input-design"> {{ 'designs' }}</label>
+                                    <select name="designs" id="input-design" class="form-control">
+                                        <option value="">Design Available</option>
+                                        {% for design in designs %}
+                                            <option {{ ( design.select) ? 'selected="selected"' : '' }} value="{{ design.id }}">{{ design.name }}</option>
+                                        {% endfor %}
+                                    </select>
+                                    <i class="fa fa-circle-o-notch fa-spin visibleLoading"></i>
+                                </div>
+                                {% endif %}
+                                {% if options %}
+                                    <div class="options SMhidden ">
+                                        {% for option in options %}
+                                            {% if option.type == 'select' %}
+                                                <div class="form-group{% if option.required %} required {% endif %}">
+                                                    <label class="control-label" for="input-option{{ option.product_option_id }}">{{ option.name }}</label>
+
+                                                    <select name="option[{{ option.product_option_id }}]" id="input-option{{ option.product_option_id }}" class="form-control">
+
+                                                        {% for option_value in option.product_option_value %}
+                                                            <option {{ (option.product_option_value|length  == 1 ) ? 'selected="selected"' : '' }} value="{{ option_value.product_option_value_id }}" data-image="{{ option_value.OpImage }}" data-pop="{{ option_value.OpImage_large }}">{{ option_value.name }}
+                                                                {% if option_value.price %}
+                                                                    ({{ option_value.price_prefix }}{{ option_value.price }})
+                                                                {% endif %} </option>
+                                                        {% endfor %}
+                                                    </select>
+                                                </div>
+                                            {% endif %}
+                                            {% if option.type == 'radio' %}
+                                                <div class="form-group{% if option.required %} required {% endif %}">
+                                                    <label class="control-label">{{ option.name }}</label>
+                                                    <div id="input-option{{ option.product_option_id }}"> {% for option_value in option.product_option_value %}
+                                                            <div class="radio">
+                                                                <label>
+                                                                    <input type="radio" name="option[{{ option.product_option_id }}]" value="{{ option_value.product_option_value_id }}" />
+                                                                    {% if option_value.image %} <img src="{{ option_value.image }}" alt="{{ option_value.name }} {% if option_value.price %} {{ option_value.price_prefix }} {{ option_value.price }} {% endif %}" class="img-thumbnail" /> {% endif %}
+                                                                    {{ option_value.name }}
+                                                                    {% if option_value.price %}
+                                                                        ({{ option_value.price_prefix }}{{ option_value.price }})
+                                                                    {% endif %} </label>
+                                                            </div>
+                                                        {% endfor %} </div>
+                                                </div>
+                                            {% endif %}
+                                            {% if option.type == 'checkbox' %}
+                                                <div class="form-group{% if option.required %} required {% endif %}">
+                                                    <label class="control-label">{{ option.name }}</label>
+                                                    <div id="input-option{{ option.product_option_id }}"> {% for option_value in option.product_option_value %}
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="option[{{ option.product_option_id }}][]" value="{{ option_value.product_option_value_id }}" />
+                                                                    {% if option_value.image %} <img src="{{ option_value.image }}" alt="{{ option_value.name }} {% if option_value.price %} {{ option_value.price_prefix }} {{ option_value.price }} {% endif %}" class="img-thumbnail" /> {% endif %}
+                                                                    {{ option_value.name }}
+                                                                    {% if option_value.price %}
+                                                                        ({{ option_value.price_prefix }}{{ option_value.price }})
+                                                                    {% endif %} </label>
+                                                            </div>
+                                                        {% endfor %} </div>
+                                                </div>
+                                            {% endif %}
+                                            {% if option.type == 'text' %}
+                                                <div class="form-group{% if option.required %} required {% endif %}">
+                                                    <label class="control-label" for="input-option{{ option.product_option_id }}">{{ option.name }}</label>
+                                                    <input type="text" name="option[{{ option.product_option_id }}]" value="{{ option.value }}" placeholder="{{ option.name }}" id="input-option{{ option.product_option_id }}" class="form-control" />
+                                                </div>
+                                            {% endif %}
+                                            {% if option.type == 'textarea' %}
+                                                <div class="form-group{% if option.required %} required {% endif %}">
+                                                    <label class="control-label" for="input-option{{ option.product_option_id }}">{{ option.name }}</label>
+                                                    <textarea name="option[{{ option.product_option_id }}]" rows="5" placeholder="{{ option.name }}" id="input-option{{ option.product_option_id }}" class="form-control">{{ option.value }}</textarea>
+                                                </div>
+                                            {% endif %}
+                                            {% if option.type == 'file' %}
+                                                <div class="form-group{% if option.required %} required {% endif %}">
+                                                    <label class="control-label">{{ option.name }}</label>
+                                                    <button type="button" id="button-upload{{ option.product_option_id }}" data-loading-text="{{ text_loading }}" class="btn btn-default btn-block"><i class="fa fa-upload"></i> {{ button_upload }}</button>
+                                                    <input type="hidden" name="option[{{ option.product_option_id }}]" value="" id="input-option{{ option.product_option_id }}" />
+                                                </div>
+                                            {% endif %}
+                                            {% if option.type == 'date' %}
+                                                <div class="form-group{% if option.required %} required {% endif %}">
+                                                    <label class="control-label" for="input-option{{ option.product_option_id }}">{{ option.name }}</label>
+                                                    <div class="input-group date">
+                                                        <input type="text" name="option[{{ option.product_option_id }}]" value="{{ option.value }}" data-date-format="YYYY-MM-DD" id="input-option{{ option.product_option_id }}" class="form-control" />
+                                                        <span class="input-group-btn">
+                <button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
+                </span></div>
+                                                </div>
+                                            {% endif %}
+                                            {% if option.type == 'datetime' %}
+                                                <div class="form-group{% if option.required %} required {% endif %}">
+                                                    <label class="control-label" for="input-option{{ option.product_option_id }}">{{ option.name }}</label>
+                                                    <div class="input-group datetime">
+                                                        <input type="text" name="option[{{ option.product_option_id }}]" value="{{ option.value }}" data-date-format="YYYY-MM-DD HH:mm" id="input-option{{ option.product_option_id }}" class="form-control" />
+                                                        <span class="input-group-btn">
+                <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                </span></div>
+                                                </div>
+                                            {% endif %}
+                                            {% if option.type == 'time' %}
+                                                <div class="form-group{% if option.required %} required {% endif %}">
+                                                    <label class="control-label" for="input-option{{ option.product_option_id }}">{{ option.name }}</label>
+                                                    <div class="input-group time">
+                                                        <input type="text" name="option[{{ option.product_option_id }}]" value="{{ option.value }}" data-date-format="HH:mm" id="input-option{{ option.product_option_id }}" class="form-control" />
+                                                        <span class="input-group-btn">
+                <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                </span></div>
+                                                </div>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+
+                                    <div class="options MDhidden  PADhidden">
+                                            <a href="#option-html-content" class="open-popup-link mbl-option-popup"></a>
+                                        <div class="mbl-option">
+                                        {% for option in options %}
+
+                                                <div class="option-tile ">
+                                                    <h4 class="pull-left">{{ option.name }}:</h4>
+                                                    <a class="pull-right"><icon class="fa fa-caret-right"></icon></a>
+                                                    <div class="clearfix"></div>
+                                                        <div class="option-tile-content">
+                                                              <spana class="option_{{option.option_id}}">{{ option.product_option_value[0].name}}</spana>
+                                                        </div>
+
+                                                </div>
+
+                                        {% endfor %}
+                                        </div>
+                                    </div>
+
+
+                                    <div id="option-html-content" class="white-popup white-background mfp-hide">
+                                        <div class="opt-html">
+                                            <a class="pull-right closePopup opt-html-close ">DONE</a>
+                                            <div class="clearfix"></div>
+                                        {% for option in options %}
+                                            <h3>{{ option.name }}:<span class="option_{{option.option_id}}">{{ option.product_option_value[0].name}}</span></h3>
+                                       <div class="option-outer">
+                                            {% for option_value in option.product_option_value %}
+                                                   <div>
+                                                       <a class="opt-button sibling_{{option.product_option_id}}" data-option="{{option.product_option_id}}" data-elem="option_{{option.option_id}}" data-value="{{ option_value.product_option_value_id }}">
+                                                           <p>{{ option_value.name }}
+                                                               {% if option_value.price_prefix == "+" %}
+                                                                   {% if option_value.price %}
+                                                                       (+{{ option_value.price }})
+                                                                   {% endif %}
+                                                               {% endif %}
+                                                           </p>
+                                                       </a>
+                                                   </div>
+                                               {% endfor %}
+                                        </div>
+                                        {% endfor %}
+
+                                        </div>
+                                    </div>
+
+                                {% endif %}
+
+
+                                <div class="cart">
+                                    <div class="add-to-cart clearfix">
+                                        <div>
+                                            <label class="quantityLabel">{{ 'QTY' }}</label>
+                                            <div class="number-rows">
+                                                <div class="dec_button int-dec-button" data-operation="-">
+                                                    <a><icon class="fa fa-minus"></icon></a></div>
+                                                     <input min="1" type="number" name="quantity" id="quantity_wanted" size="2" value="{{ minimum  }}" />
+                                                <div class="inc_button int-dec-button" data-operation="+"><a><icon class="fa fa-plus"></icon></a></div>
+                                                <span id="id_qty" class="qty-container"></span>
+                                            </div>
+                                        </div>
+                                        <div class="clicktoaction">
+                                            <input type="hidden" name="product_id" size="2" value="{{ product_id }}" />
+                                            <input type="button" value="{{ 'Add To Cart' }}" id="button-cart" rel="{{ product_id }}" data-loading-text="{{ 'Adding' }}" class="button product-button" />
+                                            <input onclick="wishlist.add('{{ product_id }}');" type="button" value="Favourites" id="button-cart-2" rel="{{ product_id }}" data-loading-text="{{ product_id }}" class="product-button hidden fav" />
+                                            <br/>
+                                            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a6b19b8f1968205"></script>
+                                            <div class="addthis_inline_share_toolbox"></div>
+                                        </div>
+                                        <div class="clearfix"></div>
+
+                                    </div>
+
+
+                                    {% if minimum > 1 %}
+                                        <div class="alert alert-info"><i class="fa fa-info-circle"></i> {{ text_minimum }}</div>
+                                    {% endif %}
+                                </div>
+                                <div class="custom_block">
+                                    <div class="panel-group" id="accordion">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title"><a href="#question_1" onClick="return false;" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed">How soon can I get this item?   <i class="fa fa-caret-down"></i></a></h4>
+                                            </div>
+                                            <div class="panel-collapse collapse" id="question_1" >
+                                                <div class="panel-body">
+                                                    {{ delivery_time }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title"><a href="#question_2" onClick="return false;" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed">What are the payment options I have?  <i class="fa fa-caret-down"></i></a></h4>
+                                            </div>
+                                            <div class="panel-collapse collapse" id="question_2" >
+                                                <div class="panel-body">
+                                                    {{ payment_method }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title"><a href="#question_3" onClick="return false;"  data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed">What is your return & exchange policy?     <i class="fa fa-caret-down"></i></a></h4>
+                                            </div>
+                                            <div class="panel-collapse collapse" id="question_3">
+                                                <div class="panel-body">
+                                                   {{ return_policy }}
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- End #product -->
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+           </div>
+</div>
+</div>
+{% if attribute_groups %}
+            <table class="table table-bordered">
+                {% for attribute_group in attribute_groups %}
+                    <thead>
+                    <tr>
+                        <td colspan="2"><strong>{{ attribute_group.name }}</strong></td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for attribute in attribute_group.attribute %}
+                        <tr>
+                            <td>{{ attribute.name }}</td>
+                            <td>{{ attribute.text }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                {% endfor %}
+            </table>
+        {% endif %}
+<div class="clearfix"></div>
+
+
+    <div class="col-sm-7 col-xs-12  ">
+        {% if hot_buy_products %}
+            <div class="row ">
+                <h2 class="CenterAlign"> DEALS</h2>
+                <div class="custom-curosel">
+                    <div class="container">
+                        <div class="owl-carousel owl-theme product-grid hot_buy_product">
+                            {% for product in hot_buy_products %}
+                                <div class="item">
+                                    {% include 'ceptz/template/item/hotproduct_caurosel_product_detail.twig' with product %}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+
+       
+
+           <div class="row">
+
+           <!--Desciption-->
+
+           {% if banner or banner_images %}
+               <div class="center-column">
+                   <div class="product-header">
+                       <h2> PRODUCT SNAPSHOT</h2>
+                   </div>
+                   <div class="box clearfix" id="desi_cription">
+                    {% if banner %}  
+
+                     <div class="background  {% if banner_images %} col-sm-6 {% else  %}  col-sm-12 {% endif  %}col-xs-12">
+                           <div class="strip-line"></div>
+                           <img src="{{ banner }}" alt="{{ heading_title}}"  ></img>
+                       </div>
+                    {% endif %}
+                    {% if banner_images %}
+                 
+                    {% for image in banner_images  %}
+                        <div class="background  col-sm-6 col-xs-12" style="margin: 10px 0px;">
+                          <h2 class="CenterAlign" style="margin: 4px 0px;"> {{ image.heading  }}</h2>
+                         <img src="{{ image.thumb }}" alt="{{ image.heading}}" />
+                      </div>
+                    {%  endfor %}
+                    {%  endif %}
+                    <div class="clearfix"></div>
+                  
+                 </div>
+               </div>
+           {% endif %}
+
+
+
+
+           <div class="center-column">
+               <div class="product-header">
+                   <h2> DESCRIPTION</h2>
+               </div>
+               <div class="box clearfix" id="desi_cription">
+                   <div class="background">
+                       <div  class="box-content products related-products  ">
+                           {{ description }}
+
+
+                       </div>
+                </div>
+               </div>
+           </div>
+
+
+
+
+               {% if size_chart %}
+               <div class="center-column">
+                   <div class="product-header">
+                       <h2> SIZE CHART</h2>
+                   </div>
+                   <div class="box clearfix" id="desi_cription">
+                       <div class="background">
+                           <div class="strip-line"></div>
+                           <img src="{{ size_chart }}" alt="{{ heading_title}}"   />
+                       </div>
+                   </div>
+               </div>
+           {% endif %}
+           {% if video_id  %}
+               <div class="center-column video_class">
+                   <div class="product-header">
+                       <h2> VIDEO</h2>
+                   </div>
+                   <div class="box clearfix" id="desi_cription">
+                       <div class="background">
+                           <div class="strip-line"></div>
+                           <amp-youtube
+                                   data-videoid="{{ video_id }}"
+                                   layout="responsive"
+                                   width="480" height="270"></amp-youtube>
+                       </div>
+                   </div>
+
+               </div>
+           {% endif %}
+
+
+           {% if review_status %}
+               <!--Reviews-->
+               <div class="center-column">
+                   <div class="product-header">
+                       <h2> REVIEWS</h2>
+                   </div>
+                   <div id="revJR" class="box clearfix">
+                       <div class="background">
+                           <div class="box-heading_JR"><a  href="#test-popup" class="open-popup-link writePOP">{{ text_write  }}</a></div>
+                           <div class="reviewRight" style=""> </div>
+                           <div class="strip-line"></div>
+                           <div class="box-content products related-products">
+                               <div id="review"></div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <!--reviews -->
+           {% endif %}
+           <!--Question Answers-->
+           <div class="center-column hidden">
+               <div class="product-header">
+                   <h2> QUESTION AND ANSWER</h2>
+               </div>
+               <div id="qnJR" class="box clearfix">
+                   <div class="background">
+                       <div class="box-heading_JR"> {{ 'Question And Answers' }}</div>
+                       <a  href="#question-popup" class="open-popup-link pointer" >Ask Quesiton?</a>
+                       <div class="strip-line"></div>
+                       <div class="box-content products related-products">
+                           <div id="quest"></div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <!--Question Answers-->
+           <!--Question pop-->
+           <div id="question-popup" class="white-popup mfp-hide">
+               <div class="box clearfix popupContent">
+                   <div class="background">
+                       <div class="abs closePopup"><i class="fa fa-close"></i></div>
+                       <div class="box-heading_JR">{{ 'Questions' }}</div>
+                       <div class="strip-line"></div>
+                       <div class="box-content products related-products">
+
+                           <div id="abdq"></div>
+                           <form class="form-horizontal" id="form-question">
+                               <div class="form-group required">
+                                   <div class="col-sm-12">
+                                       <label class="control-label" for="input-question-name">{{ 'Your Name' }}</label>
+                                       <input type="text" name="input-question-name" value="" id="input-question-name" class="form-control" />
+                                   </div>
+                               </div>
+                               <div class="form-group required">
+                                   <div class="col-sm-12">
+                                       <label class="control-label" for="input-question-email">{{ 'Email Address' }}</label>
+                                       <input type="text" name="input-question-email" value="" id="input-question-email" class="form-control" />
+                                   </div>
+                               </div>
+                               <div class="form-group required">
+                                   <div class="col-sm-12">
+                                       <label class="control-label" for="input-question">{{ 'Your Question' }}</label>
+                                       <textarea name="input-question" rows="5" id="input-question" class="form-control"></textarea>
+                                       <div class="help-block">{{ text_note }}</div>
+                                   </div>
+                               </div>
+
+                               {% if site_key %}
+                                   <div class="form-group">
+                                       <div class="col-sm-12">
+                                           <div class="g-recaptcha" data-sitekey="{{ site_key }}"></div>
+                                       </div>
+                                   </div>
+                               {% endif %}
+
+                               <div class="buttons clearfix" style="margin-bottom: 0px">
+                                   <div class="pull-right">
+                                       <button type="button" id="button-question" data-loading-text="{{ text_loading }}" class="btn btn-primary">{{ 'continue' }}</button>
+                                   </div>
+                               </div>
+                           </form>
+
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <!--Question pop-->
+           <!-- review pop -->
+           <div id="test-popup" class="white-popup mfp-hide">
+               <div class="box clearfix popupContent">
+                   <div class="background">
+                       <div class="abs closePopup"><i class="fa fa-close"></i></div>
+                       <div class="box-heading_JR"> {{ 'Reviews' }}</div>
+                       <div class="strip-line"></div>
+                       <div class="box-content products related-products">
+
+                           <div id="abda"></div>
+                           <form class="form-horizontal" id="form-review">
+                               {% if review_guest %}
+                                   <div class="form-group required">
+                                       <div class="col-sm-12">
+                                           <label class="control-label" for="input-name">{{ entry_name }}</label>
+                                           <input type="text" name="name" value="{{ customer_name }}" id="input-name" class="form-control" />
+                                       </div>
+                                   </div>
+                                   <div class="form-group required">
+                                       <div class="col-sm-12">
+                                           <label class="control-label" for="input-review">{{ entry_review }}</label>
+                                           <textarea name="text" rows="5" id="input-review" class="form-control"></textarea>
+                                           <div class="help-block">{{ text_note }}</div>
+                                       </div>
+                                   </div>
+                                   <div class="form-group required">
+                                       <div class="col-sm-12">
+                                           <label class="control-label">{{ entry_rating }}</label>
+                                           &nbsp;&nbsp;&nbsp; {{ entry_bad }}&nbsp;
+                                           <input type="radio" name="rating" value="1" />
+                                           &nbsp;
+                                           <input type="radio" name="rating" value="2" />
+                                           &nbsp;
+                                           <input type="radio" name="rating" value="3" />
+                                           &nbsp;
+                                           <input type="radio" name="rating" value="4" />
+                                           &nbsp;
+                                           <input type="radio" name="rating" value="5" />
+                                           &nbsp;{{ entry_good }}</div>
+                                   </div>
+                                   {{ captcha }}
+                                   <div class="buttons clearfix">
+                                       <div class="pull-right">
+                                           <button type="button" id="button-review" data-loading-text="{{ text_loading }}" class="btn btn-primary">{{ button_continue }}</button>
+                                       </div>
+                                   </div>
+                               {% else %}
+                                   {{ text_login }}
+                               {% endif %}
+                           </form>
+
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+
+           {% if category_products %}
+               <div class="row MDhidden">
+                   <h2 class="CenterAlign">RELATED PRODUCTS</h2>
+                   <div class="custom-curosel">
+                       <div class="container">
+                           <div class="owl-carousel owl-theme product-grid category_products">
+                               {% for product in category_products %}
+                                   <div class="item">
+                                       {% include 'ceptz/template/item/product.twig' with product %}
+                                   </div>
+                               {% endfor %}
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           {% endif %}
+           <!-- review pop -->
+
+
+     </div>
+    </div>
+
+    <div class="col-sm-5 col-xs-12 SMhidden ">
+
+           {% if category_products %}
+               <div class="center-column">
+                   <div class="product-header-mini">
+                       <h2 >{{ 'RELATED PRODUCTS' }}</h2>
+                   </div>
+                 <div class="background">
+                   <div class="clearfix" id="desi_cription">
+                       <div class="gridMargain">
+
+                           {% for product in category_products %}
+                               <div class="featured-product">
+                                   <div class="featured-product-image img-zoom-effect">
+                                       <a href="{{ product['href'] }}"><img src="{{ product['thumb'] }}" alt="{{ product['name'] }}" /></a>
+                                   </div>
+                                   <div class="featured-product-description">
+                                        <a href="{{ product['href'] }}">{{ product.name }}</a>
+                                        <div class="price">
+                                            {% if not product.special %}
+                                                {{ product.price }}
+                                            {% else %}
+                                                <span class="hot-price hot-price-new">{{ product.special }}</span>
+                                                <span class="hot-price hot-price-old">{{ product.price }}</span>
+                                            {% endif %}
+                                        </div>
+                                       {% for i in 5 %}
+                                           {% if product.rating == i %}
+                                               <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                                           {% else %}
+                                               <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                                           {% endif %}
+                                       {% endfor %}
+                                       {% if product.rating %}
+                                           <div class="rating"><i class="fa fa-star {% if product.rating >= 1 %} {{  ' active' }} {% endif %}"></i><i class="fa fa-star{% if product.rating >= 2 %} {{  ' active' }} {% endif %}"></i><i class="fa fa-star{% if product.rating >= 3 %} {{  ' active' }} {% endif %}"></i><i class="fa fa-star{% if product.rating >= 4 %} {{  ' active' }} {% endif %}"></i><i class="fa fa-star{% if product.rating >= 5 %} {{  ' active' }} {% endif %}"></i></div>
+                                       {% else %}
+                                           <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                       {% endif %}
+                                       <a href="{{ product['href'] }}" class="readmore CenterAlign">SHOP NOW</a>
+                                   </div>
+
+                               </div>
+                               <div class="clearfix"></div>
+
+                           {% endfor %}
+                       </div>
+                       <div class="clearfix"></div>
+                       </div>
+                </div>
+               </div>
+
+
+
+           {% endif %}
+       </div>
+
+
+        {% if products %}
+        <div class="col-sm-12">
+            <div class="custom-curosel">
+                <div class="container">
+                    <h2>{{ 'Customer Who Buy this Product also like this ' }}</h2>
+                    <div class="owl-carousel owl-theme product-grid">
+                        {% for product in products %}
+                            <div class="item">
+                                {% include 'ceptz/template/custom/product.twig' with product %}
+                            </div>
+                        {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {%  endif %}
+
+
+
+    </div>
+    </div>
+</div>
+<br/>
+<div class="clearfix"></div>
+
+
+{% if depart_id == 3 or depart_id == 6  or depart_id == 9  %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "{{ heading_title }}",
+ "image": [
+    "{{ 'https://www.bargain.pk/'~product_images[0].Ori_image}}",
+    "{{ 'https://www.bargain.pk/'~product_images[1].Ori_image}}",
+    "{{ 'https://www.bargain.pk/'~product_images[2].Ori_image }}"
+   ],
+  "description":"{{ meta_description }}",
+  "sku": "{{ model }}",
+  "brand": {
+    "@type": "Thing",
+    "name": "CARVE"
+  },
+  {#"review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "BARGAIN",
+      "name": "BARGAIN PK"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "89"
+  },#}
+  "offers": {
+    "@type": "Offer",
+    "url": "{{ SEO_LINK }}",
+    "priceCurrency": "PKR",
+    "price": "{% if not special %}{{ price_number }}{% else %}{{ special_price_number }} {% endif %}",
+    "priceValidUntil": "2021-11-05",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "https://schema.org/InStock",
+    "seller": {
+      "@type": "Organization",
+      "name": "BARGAIN.PK"
+    }
+  }
+}
+</script>
+
+{%  endif %}
+
+
+{{ footer }}

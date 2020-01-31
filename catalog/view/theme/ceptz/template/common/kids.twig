@@ -1,0 +1,21 @@
+{{ header }}
+<div class="full-width">
+  <div id="common-home" class="container">
+      {{ content_top }}
+  </div>
+</div>
+<div class="full-width">
+<div id="common-home" class="container">
+  <div class="row">
+    <div class="col-sm-9 col-xs-12">{{ column_left }}</div>
+    <div class="col-sm-3 col-xs-12">{{ column_right }}</div>
+    <div  class="{{ class }}"></div>
+    </div>
+    {% include 'ceptz/template/custom/tees-newsletter.twig'  %}
+    {% include 'ceptz/template/custom/tees-category.twig'  %}
+
+     <div id="content" class="{{ class }}">{{ content_bottom }}</div>
+    {% include 'ceptz/template/custom/tees/carousel.twig'  %}
+</div>
+</div>
+{{ footer }}

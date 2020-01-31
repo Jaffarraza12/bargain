@@ -1,0 +1,129 @@
+.filter-product {
+	
+}
+
+	.filter-product .carousel {
+		overflow: hidden;
+	}
+	
+		.filter-product .carousel:hover {
+			overflow: visible;
+		}
+
+	.filter-product .filter-tabs {
+		list-style: none;
+		padding: 30px 0px 18px 0px;
+		margin: 0px;
+		text-align: center;
+	}
+		.filter-product .filter-tabs ul {
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+		}
+	
+		.filter-product .filter-tabs ul > li {
+		  display: inline-block;
+		  padding: 15px 13px 0px 13px;
+		}
+		
+			.filter-product .filter-tabs ul > li > a {
+			     display: inline-block;
+			     color: #6daca1;
+			     font-size: 23px;
+			     line-height: 27px;
+			     font-weight: 800;
+			     text-transform: uppercase;
+			     padding: 0px 0px 5px 0px;
+			}
+			
+			.filter-product .filter-tabs ul > li > a:hover {
+			     color: #182140;
+			}
+			
+			.filter-product .filter-tabs ul > li.active > a,
+			.filter-product .filter-tabs ul > li.active > a:hover,
+			.filter-product .filter-tabs ul > li.active > a:focus {
+			     color: #182140;
+			     border-bottom: 2px solid #182140;
+			}
+
+.tab-content {
+	position: relative;
+}
+
+		.tab-content .prev-button, 
+		.tab-content .next-button {
+			position: absolute;
+			top: 50%;
+			left: -20px;
+			width: 40px;
+			height: 40px;
+			border: 2px solid #d1d3d9;
+			color: #d1d3d9;
+			z-index: 24;
+			transition: all 200ms ease-out;
+			-webkit-transition: all 200ms ease-out;
+			-moz-transition: all 200ms ease-out;
+			text-align: center;
+			padding: 7px 0px 0px 0px;
+			visibility: hidden;
+			opacity: 0;
+			margin-top: -20px;
+		}
+		
+		     .tab-content .prev-button:hover, 
+		     .tab-content .next-button:hover {
+		          color: #fff;
+		          background: #182140;
+		          border-color: #182140;
+		     }
+		     
+		     .tab-content:hover .prev-button, 
+		     .tab-content:hover .next-button {
+		          visibility: visible;
+		          opacity: 1;
+		          left: -10px;
+		     }
+
+			.tab-content .next-button {
+				left: auto;
+				right: -20px;
+			}
+			
+			     .tab-content:hover .next-button {
+			          left: auto;
+			          right: -10px;
+			     }
+		
+			.tab-content .prev-button:before, 
+			.tab-content .next-button:before {
+			     font-family: FontAwesome;
+			     cursor: pointer;
+			     font-size: 16px;
+			     line-height: 16px;
+			     font-weight: 400;
+			     -webkit-font-smoothing: antialiased;
+			     -moz-osx-font-smoothing: grayscale;
+			     content: "\f060";
+			     padding-right: 1px;
+			}
+			
+			     .tab-content .next-button:before {
+			          content: "\f061";
+			          padding-right: 0px;
+			     }
+				
+@media (max-width: 767px) {
+.tab-content .prev-button, 
+.tab-content .next-button {
+     visibility: visible;
+     opacity: 1;
+     left: -10px !important;
+}
+
+     .tab-content .next-button {
+          left: auto !important;
+          right: -10px !important;
+     }
+}

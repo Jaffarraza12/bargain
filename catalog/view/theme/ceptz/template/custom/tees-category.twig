@@ -1,0 +1,26 @@
+<div class="full-width standard-spacing">
+    <div class="container home-block white-background" >
+        <div class="single" >
+            <h1 class="CenterAlign" style="font-size: 24px; ">FAMOUS CATEGORY</h1>
+            <div class="row NoPadding department-container" >
+                {%  set i = 0 %}
+                {% for category in categories %}
+                    {% if category.count > 0 %}
+                    <div class="col-sm-4 col-xs-6 tees-category-block">
+                        <div >
+                            <a target="_parent" href="{{ category.href }}">
+                                <amp-img src="{{ category.image }}" alt="{{ category.name }}"  width="425" height="250" layout="responsive"></amp-img></a>
+                           <a class="CenterAlign Block"  href="{{ category.href }}">{{ category.name }}({{ category.count }})</a>
+                        </div>
+                    </div>
+                    {% endif %}
+                {%  set i = i + 1 %}
+                {%  if i % 2 == 0 %}
+                        <div class="clearfix-sm"></div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>

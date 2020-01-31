@@ -1,0 +1,89 @@
+{{ header }}
+<div class="main-content full-width inner-page">
+  <div class="background-content"></div>
+  <div class="">
+    <div class="shadow"></div>
+    <div class="pattern">
+      <div class="container">
+      <div class="row">{{ column_left }}
+            {% if column_left and column_right %}
+            {% set class = 'col-sm-6' %}
+            {% elseif column_left or column_right %}
+            {% set class = 'col-sm-9' %}
+            {% else %}
+            {% set class = 'col-sm-12' %}
+            {% endif %}{{ content_top }}
+        <div  class="col-sm-9 tab-full-width">
+            <div class="hidden-xs PADhidden manual-top-height"></div>
+            {% include 'ceptz/template/custom/breadcrumb.twig' %}
+             <h1 id="title-page" class="customPadding">{{ heading_title }}</h1>
+
+            <div class="clearfix"></div>
+            <div class="product-filter clearfix">
+                <span class="col-xs-4" style="padding-left:0px;">({{ product_total }} records found)</span>
+                <a  class="col-xs-2 filter pointer MDhidden" onclick="openNav()" class="pointer"><icon class="fa fa-filter"></icon> Filter</a>
+                <div class="list-options col-xs-6">
+                    {% if sorts %}
+                    <div class="sort">
+                        <select id="input-sort" class="form-control" onchange="location = this.value;">
+                            {% for sorts in sorts %}
+                                {% if sorts.value == '%s-%s'|format(sort, order) %}
+                                    `                           <option value="{{ sorts.href }}" selected="selected">{{ sorts.text }}</option>
+                                {% else %}
+                                    <option value="{{ sorts.href }}">{{ sorts.text }}</option>
+                                {% endif %}
+                            {% endfor %}
+                        </select>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+
+                {%  if products %}
+                <!-- Products grid -->
+                <div class="product-grid product-listing-grid  active">
+                    <div class="row">
+                       {% for product in products %}
+                      <div class="col-sm-3 col-xs-6">
+                          {% set right = 1  %}
+                          {% include 'ceptz/template/item/topsellingproduct.twig' with product %}
+                      </div>
+                      {% endfor %}
+                    </div>
+                    {% if category_content %}
+                    <div class="row">
+
+                        <div class="panel-group" id="accordion">
+                            {% set i = 1 %}
+                            {%  for content in category_content %}
+                             <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a href="#question_{{ content.id }}" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle{{ (i > 1 ) ? ' collapsed ' : '' }}" >{{ content.question }}     <i class="fa fa-caret-down"></i></a></h4>
+                                </div>
+                                <div class="panel-collapse collapse {{ (i==1) ? 'in' : '' }}"   id="question_{{ content.id }}" >
+                                    <div class="panel-body">
+                                        <p>{{ content.answer }}</p>
+                                    </div>
+                                </div>
+                              </div>
+                              {% set i = i + 1 %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+
+
+                {% endif %}
+              <div class="clearfix"></div>
+              <div class="row">
+                <div class="col-sm-6 text-left">{{ pagination }}</div>
+                <div class="col-sm-6 text-right">{{ results }}</div>
+              </div>
+        </div>
+              {{ content_bottom }}</div>
+            {{ column_right }}</div>
+  </div>
+  </div>
+  </div>
+
+{{ footer }}

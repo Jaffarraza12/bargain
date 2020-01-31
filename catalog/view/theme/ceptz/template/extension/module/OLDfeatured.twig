@@ -1,0 +1,190 @@
+<h3>{{ heading_title }}</h3>
+<div class="row">
+ {% for product in products %}
+  <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+    <div class="product-thumb transition">
+      <div class="image"><a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive" /></a></div>
+      <div class="caption">
+        <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
+        <p>{{ product.description }}</p>
+        {% if product.rating %}
+        <div class="rating">
+          {% for i in 5 %}
+          {% if product.rating < i %}
+          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+          {% else %}
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+          {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% if product.price %}
+        <p class="price">
+          {% if not product.special %}
+          {{ product.price }}
+          {% else %}
+          <span class="price-new">{{ product.special }}</span> <span class="price-old">{{ product.price }}</span>
+          {% endif %}
+          {% if product.tax %}
+          <span class="price-tax">{{ text_tax }} {{ product.tax }}</span>
+          {% endif %}
+        </p>
+        {% endif %}
+      </div>
+      <div class="button-group">
+        <button type="button" onclick="cart.add('{{ product.product_id }}');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span></button>
+        <button type="button" data-toggle="tooltip" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');"><i class="fa fa-heart"></i></button>
+        <button type="button" data-toggle="tooltip" title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');"><i class="fa fa-exchange"></i></button>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+
+
+<div class="box clearfix box-with-products with-scroll">
+
+  <a class="next" href="#myCarousel{{ id }}" id="myCarousel{{ id }}_next"><span></span></a>
+  <a class="prev" href="#myCarousel{{ id }}" id="myCarousel{{ id }}_prev"><span></span></a>
+
+
+  <div class="box-heading">{{ heading_title }}</div>
+  <div class="strip-line"></div>
+  <div class="clear"></div>
+  <div class="box-content products">
+    <div class="box-product">
+      <div id="myCarousel{{ id }}" class="carousel slide">
+      <!-- Carousel items -->
+        <div class="carousel-inner">
+          <div class="item col-lg-3 col-md-3 col-sm-3 col-xs-12">">
+            <div class="product clearfix product-hover">
+              <div class="left">
+                <?php if ($product['thumb']) { ?>
+                <?php if($product['special'] && $theme_options->get( 'display_text_sale' ) != '0') { ?>
+                <?php $text_sale = 'Sale';
+				if($theme_options->get( 'sale_text', $config->get( 'config_language_id' ) ) != '') {
+                $text_sale = $theme_options->get( 'sale_text', $config->get( 'config_language_id' ) );
+                } ?>
+                <?php if($theme_options->get( 'type_sale' ) == '1') { ?>
+                <?php $product_detail = $theme_options->getDataProduct( $product['product_id'] );
+                $roznica_ceny = $product_detail['price']-$product_detail['special'];
+                $procent = ($roznica_ceny*100)/$product_detail['price']; ?>
+                <div class="sale">-<?php echo round($procent); ?>%</div>
+                <?php } else { ?>
+                <div class="sale"><?php echo $text_sale; ?></div>
+                <?php } ?>
+                <?php } ?>
+
+                <div class="image <?php if($theme_options->get( 'product_image_effect' ) == '1') { echo 'image-swap-effect'; } ?>">
+                  <a href="<?php echo $product['href']; ?>">
+                    <?php if($theme_options->get( 'product_image_effect' ) == '1') {
+                    $nthumb = str_replace(' ', "%20", ($product['thumb']));
+                    $nthumb = str_replace(HTTP_SERVER, "", $nthumb);
+                    $image_size = getimagesize($nthumb);
+                    $image_swap = $theme_options->productImageSwap($product['product_id'], $image_size[0], $image_size[1]);
+                    if($image_swap != '') echo '<img src="' . $image_swap . '" alt="' . $product['name'] . '" class="swap-image" />';
+                    } ?>
+                    <?php if($theme_options->get( 'lazy_loading_images' ) != '0') { ?>
+                    <img src="image/catalog/blank.gif" data-echo="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" class="<?php if($theme_options->get( 'product_image_effect' ) == '2') { echo 'zoom-image-effect'; } ?>" />
+                    <?php } else { ?>
+                    <img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" class="<?php if($theme_options->get( 'product_image_effect' ) == '2') { echo 'zoom-image-effect'; } ?>" />
+                    <?php } ?>
+                  </a>
+                </div>
+                <?php } else { ?>
+                <div class="image">
+                  <a href="<?php echo $product['href']; ?>"><img src="image/no_image.jpg" alt="<?php echo $product['name']; ?>" <?php if($theme_options->get( 'product_image_effect' ) == '2') { echo 'class="zoom-image-effect"'; } ?> /></a>
+                </div>
+                <?php } ?>
+                <?php if($theme_options->get( 'display_specials_countdown' ) == '1' && $product['special']) { $countdown = rand(0, 5000)*rand(0, 5000);
+                $product_detail = $theme_options->getDataProduct( $product['product_id'] );
+                $date_end = $product_detail['date_end'];
+                if($date_end != '0000-00-00' && $date_end) { ?>
+                <script>
+                    $(function () {
+                        var austDay = new Date();
+                        austDay = new Date(<?php echo date("Y", strtotime($date_end)); ?>, <?php echo date("m", strtotime($date_end)); ?> - 1, <?php echo date("d", strtotime($date_end)); ?>);
+                        $('#countdown<?php echo $countdown; ?>').countdown({until: austDay});
+                    });
+                </script>
+                <div id="countdown<?php echo $countdown; ?>" class="clearfix"></div>
+                <?php } ?>
+                <?php } ?>
+              </div>
+              <div class="right">
+                <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
+                <div class="price">
+                  <?php if (!$product['special']) { ?>
+                  <?php echo $product['price']; ?>
+                  <?php } else { ?>
+                  <span class="price-new"><?php echo $product['special']; ?></span> &nbsp;<span class="price-old"><?php echo $product['price']; ?></span>
+                  <?php } ?>
+
+                </div>
+                <?php if ($product['rating'] && $theme_options->get( 'display_rating' ) != '0') { ?>
+                <div class="rating"><i class="fa fa-star<?php if($product['rating'] >= 1) { echo ' active'; } ?>"></i><i class="fa fa-star<?php if($product['rating'] >= 2) { echo ' active'; } ?>"></i><i class="fa fa-star<?php if($product['rating'] >= 3) { echo ' active'; } ?>"></i><i class="fa fa-star<?php if($product['rating'] >= 4) { echo ' active'; } ?>"></i><i class="fa fa-star<?php if($product['rating'] >= 5) { echo ' active'; } ?>"></i></div>
+                <?php } else { ?>
+                <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                <?php } ?>
+
+
+                <?php if($theme_options->get( 'display_add_to_compare' ) != '0' || $theme_options->get( 'display_add_to_wishlist' ) != '0' || $theme_options->get( 'display_add_to_cart' ) != '0') { ?>
+                <div class="only-hover">
+                  <?php if($theme_options->get( 'display_add_to_cart' ) != '0') { ?>
+                  <div class="button-overflow">
+                    <!--<a onclick="cart.add('<?php echo $product['product_id']; ?>');" class="button"><?php echo $button_cart; ?></a>-->
+                    <a href="<?php echo $product['href']; ?>" class="button"><?php echo 'Shop Now'; ?></a>
+                  </div>
+                  <?php } ?>
+                  <?php if($theme_options->get( 'display_add_to_compare' ) != '0' || $theme_options->get( 'display_add_to_wishlist' ) != '0') { ?>
+                  <ul style="display: none;" >
+                    <?php if($theme_options->get( 'display_add_to_wishlist' ) != '0') { ?>
+                    <li><a onclick="wishlist.add('<?php echo $product['product_id']; ?>');" data-toggle="tooltip" data-original-title="<?php if($theme_options->get( 'add_to_wishlist_text', $config->get( 'config_language_id' ) ) != '') { echo $theme_options->get( 'add_to_wishlist_text', $config->get( 'config_language_id' ) ); } else { echo 'Add to wishlist'; } ?>"><i class="fa fa-heart"></i></a></li>
+                    <?php } ?>
+
+                    <?php if($theme_options->get( 'display_add_to_compare' ) != '0') { ?>
+                    <li><a onclick="compare.add('<?php echo $product['product_id']; ?>');" data-toggle="tooltip" data-original-title="<?php if($theme_options->get( 'add_to_compare_text', $config->get( 'config_language_id' ) ) != '') { echo $theme_options->get( 'add_to_compare_text', $config->get( 'config_language_id' ) ); } else { echo 'Add to compare'; } ?>"><i class="fa fa-exchange"></i></a></li>
+                    <?php } ?>
+
+                    <?php if($theme_options->get( 'quick_view' ) == 1) { ?>
+                    <li class="quickview"><a href="index.php?route=product/quickview&product_id=<?php echo $product['product_id']; ?>" data-toggle="tooltip" data-original-title="<?php if($theme_options->get( 'quickview_text', $config->get( 'config_language_id' ) ) != '') { echo html_entity_decode($theme_options->get( 'quickview_text', $config->get( 'config_language_id' ) )); } else { echo 'Quickview'; } ?>"><i class="fa fa-search"></i></a></li>
+                    <?php } ?>
+                  </ul>
+                  <?php } ?>
+                </div>
+                <?php } ?>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+<?php if($theme_options->get( 'product_scroll_featured' ) != '0') { ?>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var owl{{ id }} = $(".box #myCarousel{{ id }} .carousel-inner");
+        $("#myCarousel<?php echo $id; ?>_next").click(function(){
+            owl{{ id }}.trigger('owl.next');
+            return false;
+        })
+        $("#myCarousel<?php echo $id; ?>_prev").click(function(){
+            owl{{ id }}.trigger('owl.prev');
+            return false;
+        });
+        owl{{ id }}.owlCarousel({
+            slideSpeed : 500,
+            singleItem:true
+        });
+    });
+</script>
+<?php } ?>
+<?php } ?>

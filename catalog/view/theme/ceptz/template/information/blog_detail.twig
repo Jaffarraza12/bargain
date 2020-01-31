@@ -1,0 +1,96 @@
+{{ header }}
+
+<div class="full-width">
+    {% include 'ceptz/template/custom/breadcrumb.twig' %}
+    <div id="information-information" class="container">
+
+        <div class="row">
+            <div id="content" class="col-sm-9 content-J" >{{ content_top }}
+                <div class="heading">
+                    <h1>{{ heading_title }}</h1>
+                    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a6b19b8f1968205"></script>
+                    <div class="addthis_inline_share_toolbox"></div>
+                </div>
+                    <div class="blog-content-xr">
+                        {{ description }}
+                        {% if related_products %}
+                        {% set id = 131 %}
+                        <div class="container">
+                            <div class="box clearfix box-with-products with-scroll top_bottom_margin">
+                                <h2 >{{ 'Related Products' }}</h2>
+                                <a class="next"id="myCarousel{{ id }}_next"><span></span></a>
+                                <a class="prev"id="myCarousel{{ id }}_prev"><span></span></a>
+                                <div class="strip-line"></div>
+                                <div class="clear"></div>
+                                <div class="box-content products">
+                                    <div class="box-product">
+                                        <div id="myCarousel{{ id }}" class="carousel slide CarouselGo" data-id="{{ id }}">
+                                            <div class="carousel-inner product-grid">
+                                                {% for product in related_products %}
+                                                    <div class="item">
+                                                        {% include 'ceptz/template/custom/product.twig' with product %}
+                                                    </div>
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        {% endif %}
+                        {% if related_articles %}
+                            <h2>Related Articles</h2>
+                            {% for article in related_articles %}
+                            <div class="blog-item col-sm-4 col-xs-12">
+                                <div class="blog-image">
+                                    <amp-img src="{{ article.image }}" alt="{{ article.name }}"  width="auto" height="270" ></amp-img>
+                                </div>
+                                <div class="blog-short-description">
+                                    <p>{{ article.name }}</p>
+                                </div>
+                                <a href="{{ article.href }}" class="readmore CenterAlign">READMORE</a>
+                            </div>
+
+                        {%  endfor %}
+                        {%  endif %}
+                        <div class="clearfix"></div>
+                   </div>
+               </div>
+               <div class="col-sm-3 sideBarMBL">
+                <div class="box container-J" >
+                    <h3>CATEGORIES</h3>
+                    <ul class="blog-categories">
+                    {% for category in blog_categories  %}
+                        <li><a>{{ category.name }}</a></li>
+                    {% endfor %}
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <div class="product-grid active container-J">
+                    <h3>FEATURED PRODUCT</h3>
+                {% for product in Feature %}
+                    <div class="col-sm-12 col-xs-12">
+                        {% set right = 1  %}
+                        {% include 'ceptz/template/custom/product2.twig' with product %}
+                    </div>
+                {% endfor %}
+                </div>
+                <div class="blog-content container-J gridMargain">
+                    <h3>FEATURED ARTICLE</h3>
+                    {% for article in related_articles %}
+                    <div class="featured-article">
+                        <div class="featured-article-image"> <amp-img src="./image/department/vitamins.jpg" alt="Welcome"  width="auto" height="100" ></amp-img></div>
+                        <div class="featured-article-description">Lorem ipsum dolor sit amet, nec at stet natum graeci. Volutpat sententiae efficiendi nam no, labore epicuri ex vim. Brute impedit vis no, in dicta dignissim sed
+                        <a class="readmore CenterAlign">READMORE</a></div>
+                        <div class="clearfix"></div>
+                    </div>
+                    {% endfor %}
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ footer }}

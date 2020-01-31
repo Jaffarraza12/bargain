@@ -1,0 +1,1 @@
+<?php// Versiondefine('VERSION', '3.0.2.0');// Configurationif (is_file('config.php')) {	require_once('config.php');}// Installif (!defined('DIR_APPLICATION')) {	header('Location: install/index.php');	exit;}// Startuprequire_once(DIR_SYSTEM . 'startup.php');start('catalog');

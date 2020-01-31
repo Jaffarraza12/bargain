@@ -1,0 +1,81 @@
+.standard-body .full-width .container {
+	max-width: none;
+	width: 1098px;
+}
+
+.no-responsive body {
+	min-width: 1098px;
+}
+
+.standard-body .fixed > .background {
+	width: 1058px;
+	max-width: none;
+}
+
+.main-fixed {
+	width: 1058px;
+	max-width: none;
+}
+
+.main-fixed2 {
+	width: 1058px;
+	max-width: none;
+}
+
+@media (min-width:991px) and (max-width:1098px) {
+	.responsive .standard-body .full-width .container {
+		width: 992px;
+	}
+	
+	.responsive .standard-body .fixed > .background {
+		width: 952px;
+	}
+	
+	.responsive .main-fixed {
+		width: 952px;
+	}
+	
+	.responsive .main-fixed2 {
+		width: 952px;
+	}
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	.responsive .standard-body .full-width .container {
+		width: 768px;
+	}
+	
+	.responsive .standard-body .fixed > .background {
+		width: 728px;
+	}
+	
+	.responsive .main-fixed {
+		width: 728px;
+	}
+	
+	.responsive .main-fixed2 {
+		width: 728px;
+	}
+}
+	
+@media (max-width:768px) {
+	.responsive .standard-body .full-width .container {
+		width: auto;
+	}
+	
+	.responsive .standard-body .fixed > .background {
+		width: auto;
+	}
+	
+	.responsive .main-fixed {
+		width: auto;
+	}
+	
+	.responsive .main-fixed2 {
+		width: auto;
+	}
+}
+
+.container .container {
+	width: auto !important;
+}

@@ -1,0 +1,66 @@
+<div id="mySidenav"  class="box box-with-categories sidenav">
+  <a class="closebtn pointer MDhidden" onclick="closeNav()">&times;</a>
+  <div class="box-heading" style="text-align: left">{{ depart_name }}</div>
+  <div class="strip-line"></div>
+  <div class="box-content box-category">
+    <ul class="accordion" id="accordion-category">
+       {% set i =0  %}
+        {% for category in categories %}
+        {% set i = i + 1 %}
+            <li>
+              {% if category.category_id == category_id %}
+                   <a href="{{ category.href }}" class="active">{{ category.name }}</a>
+             {% else %}
+                 <a href="{{ category.href }}" class="active">{{ category.name }}</a>
+             {% endif %}
+             {% if category.children %}
+                 <span class="head">
+                          <a style="float:right;padding-right:5px" class="accordion-toggle{% if category.category_id != category_id %} {{ 'collapsed' }} {% endif %}" data-toggle="collapse" onclick="return false;" data-parent="#accordion-category" href="#category{{ i }}">
+                              <span class="plus">+</span><span class="minus">-</span></a></span>
+                 <div id="category{{ i }}" class="panel-collapse collapse {% if category.category_id == category_id %} {{ 'in' }} {% endif %}" style="clear:both">
+                        <ul>
+                            {% for child in category.children %}
+                                <li>
+                                    {% if child.category_id == child_id %}
+                                        <a href="{{ child.href }}" class="active">{{ child.name }}</a>
+                                    {% else %}
+                                        <a href="{{ child.href }}">{{ child.name }}</a>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                 </div>
+              {% endif %}
+            </li>
+      {% endfor %}
+     {%  if depart_id == 1 %}
+        <li><a href="nutrition"  class="active" >Shop  Solution</a>
+            <span class="head">
+                          <a style="float:right;padding-right:5px" class="accordion-toggle{% if not tags %} {{ 'collapsed' }} {% endif %}" data-toggle="collapse" data-parent="#accordion-category" onclick="return false;" href="#tag121">
+                              <span class="plus">+</span><span class="minus">-</span></a></span>
+            <div id="tag121" class="panel-collapse collapse {% if tags %} {{ 'in' }} {% endif %}" style="clear:both">
+                <ul>
+
+                  <li> <a href="shop-by-solution/basic-fitness">Basic Fitness</a></li>
+                  <li> <a href="shop-by-solution/body-building">Body Building </a></li>
+                  <li><a href="shop-by-solution/fat-burning" >Fat Burning</a></li>
+                  <li><a  href="shop-by-solution/immune"  >Immune</a></li>
+                  <li><a  href="shop-by-solution/heart-health"  >Heart Health</a></li>
+                  <li><a href="shop-by-solution/men-health" >Men Health</a></li>
+                  <li><a href="shop-by-solution/joint-health" >Joint Health</a></li>
+                  <li><a href="shop-by-solution/general-health">General Health</a></li>
+                  <li><a href="shop-by-solution/sports" >Sports</a></li>
+                  <li><a href="shop-by-solution/sleep" >Sleep</a></li>
+                  <li><a href="shop-by-solution/endurance" >Endurance</a></li>
+                  <li><a href="shop-by-solution/weight-management">Weight Management</a></li>
+                  <li><a href="shop-by-solution/weight-gain">Weight Gain</a></li>
+                  <li><a href="shop-by-solution/women-health">Women Health</a></li>
+                </ul>
+            </div>
+        </li>
+         <li><a href="top-supplements "  class="active" >Top Supplements</a></li>
+      {% endif %}
+
+    </ul>
+  </div>
+</div>

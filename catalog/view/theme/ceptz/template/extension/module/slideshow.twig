@@ -1,0 +1,47 @@
+<div class="swiper-viewport SMhidden-portrait">
+  <div id="slideshow{{ module }}" class="swiper-container SlideShowGO ">
+    <div class="swiper-wrapper">
+        {% for banner in banners %}
+               <div class="swiper-slide text-center">
+                   {% if banner.link %}
+                   <a href="{{ banner.link }}">
+                     <img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" /></a>
+                   {% else %}
+                     <img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" />
+                   {% endif %}
+               </div>
+      {% endfor %} </div>
+  </div>
+  <div class="swiper-pagination slideshow{{ module }}"></div>
+  <div class="swiper-pager">
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
+
+<div class="swiper-viewport MDhidden PADhidden  SMhidden-landscape">
+
+  <div id="slideshow{{ module }}_mbl" class="swiper-container SlideShowGOMBL ">
+    <div class="swiper-wrapper">
+        {% for banner in banners %}
+          <div class="swiper-slide text-center">
+              {% if banner.link %}
+                <a href="{{ banner.link }}">
+                  <img src="{{ banner.mbl_image }}" alt="{{ banner.title }}" class="img-responsive" /></a>
+              {% else %}
+                <img src="{{ banner.mbl_image }}" alt="{{ banner.title }}" class="img-responsive" />
+              {% endif %}
+          </div>
+        {% endfor %}
+    </div>
+  </div>
+
+
+  <div class="swiper-pagination slideshow{{ module }}_mbl"></div>
+  <div class="swiper-pager">
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+

@@ -1,0 +1,16 @@
+2018-03-10 7:29:17 - PHP Warning:  unlink(D:/xampp/htdocs/bargain/system/storage/cache/cache.length_class.1.1520665438): No such file or directory in D:\xampp\htdocs\bargain\system\library\cache\file.php on line 17
+2018-03-16 3:58:36 - PHP Warning:  mysqli::mysqli(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\bargain\system\library\db\mysqli.php on line 7
+2018-03-16 3:58:36 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in D:\xampp\htdocs\bargain\system\library\db\mysqli.php on line 10
+2018-03-16 3:58:36 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in D:\xampp\htdocs\bargain\system\library\db\mysqli.php on line 10
+2018-03-17 7:44:59 - PHP Warning:  mysqli::mysqli(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\bargain\system\library\db\mysqli.php on line 7
+2018-03-17 7:44:59 - PHP Warning:  mysqli::mysqli(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\bargain\system\library\db\mysqli.php on line 7
+2018-03-17 7:45:00 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in D:\xampp\htdocs\bargain\system\library\db\mysqli.php on line 10
+2018-03-17 7:45:00 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in D:\xampp\htdocs\bargain\system\library\db\mysqli.php on line 10
+2018-03-17 7:45:00 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in D:\xampp\htdocs\bargain\system\library\db\mysqli.php on line 10
+2018-03-17 7:44:59 - PHP Warning:  mysqli::mysqli(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\bargain\system\library\db\mysqli.php on line 7
+2018-03-17 7:45:00 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in D:\xampp\htdocs\bargain\system\library\db\mysqli.php on line 10
+2018-03-17 7:45:00 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in D:\xampp\htdocs\bargain\system\library\db\mysqli.php on line 10

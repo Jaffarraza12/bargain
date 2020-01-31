@@ -1,0 +1,37 @@
+<div class="product2 clearfix product-hover {% if right %} createrRight {% endif %} ">
+  <div class="left">
+    {% if percentage != 100 %}
+        <div class="sale">
+            {{ percentage|round  }}%
+        </div>
+    {% endif %}
+    <div class="image image-swap-effect">
+      <a href="{{ product.href }}">
+        <img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="lazy"/>
+      </a>
+    </div>
+  </div>
+  <div class="right">
+    <div class="name"><a href="{{ product.href }}">{{ product.name }}</a></div>
+    <div class="price">
+        {% if not product.special %}
+            {{ product.price }}
+        {% else %}
+          <span class="price-new">{{ product.special }}</span> <span class="price-old">{{ product.price }}</span>
+        {% endif %}
+    </div>
+      {% for i in 5 %}
+          {% if product.rating == i %}
+            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+          {% else %}
+            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+          {% endif %}
+      {% endfor %}
+      {% if product.rating %}
+        <div class="rating"><i class="fa fa-star {% if product.rating >= 1 %} {{  ' active' }} {% endif %}"></i><i class="fa fa-star{% if product.rating >= 2 %} {{  ' active' }} {% endif %}"></i><i class="fa fa-star{% if product.rating >= 3 %} {{  ' active' }} {% endif %}"></i><i class="fa fa-star{% if product.rating >= 4 %} {{  ' active' }} {% endif %}"></i><i class="fa fa-star{% if product.rating >= 5 %} {{  ' active' }} {% endif %}"></i></div>
+      {% else %}
+        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+      {% endif %}
+
+  </div>
+</div>

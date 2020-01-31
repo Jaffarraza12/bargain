@@ -1,0 +1,92 @@
+{{ header }}
+<div class="full-width">
+    <div id="common-home" class="container">
+        {{ content_top }}
+    </div>
+</div>
+<div class="full-width">
+    <div id="common-home" class="container">
+        <div class="row">
+            <div class="col-sm-9 col-xs-12">{{ column_left }}</div>
+            <div class="col-sm-3 col-xs-12">{{ column_right }}</div>
+            <div  class="{{ class }}"></div>
+        </div>
+        {% include 'ceptz/template/custom/tees-newsletter.twig'  %}
+        {% include 'ceptz/template/custom/meat-category.twig'  %}
+
+        <div id="content" class="{{ class }}">{{ content_bottom }}<br/></div>
+        {% include 'ceptz/template/custom/tees/carousel.twig'  %}
+    </div>
+</div>
+<a class="open-popup-link hidden" href="#content-to-open">Open Popup</a>
+<div id="content-to-open" class="white-popup white-background mfp-hide" style="width: 50%;margin:auto;">
+    <div class="white-background">
+        <div style="width: 50%;margin:auto;">
+            <h2 class="text-center" style="margin-top: 10px;text-transform: uppercase;margin-top: 10px;text-transform: uppercase; font-weight: 800;font-size: 24px;padding:30px 0px 6px;">SELECT YOUR LOCATION </h2>
+            <div >
+                <div class="col-sm-3 col-xs-12">
+                    <select name="city" id="city" disabled="disabled">
+                        <option value="41">Karachi</option>
+                    </select>
+                </div>
+                <div class="col-sm-3 col-xs-12">
+                    <select name="area" id="area">
+                        <option value="nna">North Nazimabad Block A</option>
+                        <option value="nnb">North Nazimabad Block B</option>
+                        <option value="nnc">North Nazimabad Block C</option>
+                        <option value="nnd">North Nazimabad Block D</option>
+                        <option value="nne">North Nazimabad Block E</option>
+                        <option value="nnf">North Nazimabad Block F</option>
+                        <option value="nng">North Nazimabad Block G</option>
+                        <option value="nnh">North Nazimabad Block H</option>
+                        <option value="nni">North Nazimabad Block I</option>
+                        <option value="nnj">North Nazimabad Block J</option>
+                        <option value="nnk">North Nazimabad Block K</option>
+                        <option value="nnl">North Nazimabad Block L</option>
+                        <option value="nnm">North Nazimabad Block M</option>
+                        <option value="nnn">North Nazimabad Block N</option>
+                        <option value="nno">North Nazimabad Block O</option>
+                        <option value="nnp">North Nazimabad Block P</option>
+                        <option value="nnq">North Nazimabad Block Q</option>
+                        <option value="nnr">North Nazimabad Block R</option>
+                        <option value="nns">North Nazimabad Block S</option>
+                        <option value="nnt">North Nazimabad Block T</option>
+                        <option value="gulshan-e-Iqbal">Gulshan-e-Iqbal</option>
+                    </select>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="add-to-cart" style="text-align: center;padding-bottom:10px;margin: 8px 0px 0px;" >
+                <button id="save_location" class="btn button save_location text-center" style="font-size:12px;background: #c00;color: #fff !important;">SAVE</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{{ footer }}
+<script>
+    $(function(){
+        $('.save_location').click(function(){
+            $.ajax({
+                url: "index.php?route=common/meat/saveshipping",
+                type:'POST',
+                data:{'area':$('#area').val(),'city':$('#city').val()}
+            }).success(function(resp) {
+                res = $.parseJSON(resp);
+                if (res.error == false){
+                  location.reload();                }
+            });
+        });
+        $('.open-popup-link').magnificPopup({
+            type:'inline',
+            showCloseBtn:true,
+            midClick: true,
+            enableEscapeKey:false,
+            closeOnBgClick:false// Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+        });
+        {% if meat_shipping_city is empty and meat_shipping_area is empty %}
+          $('.open-popup-link').click()
+        {% endif %}
+    });
+</script>

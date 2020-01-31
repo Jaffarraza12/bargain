@@ -1,0 +1,24 @@
+{% if questions %}
+{% for question in questions %}
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="panel-title"><a href="#question_{{ question.id }}" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed">{{ question.question }}
+
+            <div class="pull-right"><span style="color: #c00"> answer {{ question.total_answer }}</span>  <i class="fa fa-caret-down"></i></div>
+          </a></div>
+      </div>
+      <div class="panel-collapse collapse" id="question_{{ question.id }}" style="height: 0px;">
+        <div class="panel-body">
+           {% for ans in answers[question.id] %}
+               <p>{{ ans.answer }}</p>
+           {% endfor %}
+        </div>
+      </div>
+    </div>
+
+  </div>
+{% endfor %}
+  <div class="text-right">{{ pagination }}</div>
+{% endif %}
+

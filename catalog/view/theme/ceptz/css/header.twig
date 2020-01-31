@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html dir={{ direction }} lang={{ lang }} {% if amp %} amp {% endif %} class="responsive">
+<!--<![endif]-->
+<head>
+<meta charset=UT />
+{% if amp %}
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+{% if youtube == 0 %}
+<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+{% endif %}
+{% endif %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{{ title }}</title>
+<base href="{{ base }}" />
+<meta name="robots" content="{% if indno == 0  %}no{% endif %}index,{% if indno == 0  %}no{% endif %}follow">
+{% if description %}
+<meta name="description" content="{{ description }}" />
+{% endif %}
+{% if keywords %}
+<meta name="keywords" content="{{ keywords }}" />
+{% endif %}
+<link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+<link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
+<link href="catalog/view/theme/ceptz/css/stylesheet-v-0.6.css" rel="stylesheet">
+<link href="catalog/view/theme/ceptz/css/media-v-0.1.css" rel="stylesheet">
+<link href="catalog/view/theme/ceptz/css/menu.css" rel="stylesheet">
+<link href="catalog/view/theme/ceptz/css/responsive.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/magnific/magnific-popup.css" media="screen" />
+{% for style in styles %}
+<link href="{{ style.href }}" type="text/css" rel="{{ style.rel }}" media="{{ style.media }}" />
+{% endfor %}
+{% for link in links %}
+<link href="{{ link.href }}" rel="{{ link.rel }}" />
+{% endfor %}
+{% for analytic in analytics %}
+{{ analytic }}
+{% endfor %}
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WZ8LTFG');</script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ8LTFG"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="standard-body">
+<div id="main" class="">
+<header class="header-type-3">
+<div class="background-header"></div>
+<div class="slider-header">
+<!-- Top of pages -->
+<div id="top" class="full-width">
+<div class="background-top"></div>
+<div class="background">
+<div class="shadow"></div>
+<div class="pattern full-width">
+<div class="container OfferJR SMhidden PADhidden">
+<div class="row ">
+<div class="col-sm-4">
+    <h5><a href="tel:0314 200 6655">Call or Whatsapp  0314 200 6655</a></h5>
+</div>
+<div class="col-sm-5">
+<div class="jacky">
+
+</div>
+</div>
+<div class="col-sm-3">
+<ul class="JrSmMenu">
+<li><a href="help"> Help</a></li>
+<li class="email-service"><a class="pointer " >Stay Updated</a>
+
+</li>
+</ul>
+</div>
+</div>
+</div>
+    <div class="PosEmailService">
+        <div class="PosEmailServiceClose" ><icon   class="fa fa-close"></icon></div>
+        <form autocomplete="off">
+            <div class="notify">
+                <div class="annonce annonce-danger abd-warning"></div>
+                <div class="annonce annonce-success abd-success"></div>
+            </div>
+            <p>Get discount on sales coupon codes and product updates. </p>
+            <div class="box-content-jr">
+                <div id="newsletter121" class="input-group margin-bottom-sm">
+                    <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                    <input id="email-newsletter" name="emailML" data-tag="header" class="form-control" type="email" class="email" placeholder="{{ input_placeholder }}" />
+                    <a class="subscribeML" style="width: 80px;" data-bind="email-newsletter" data-notifiction="notify">{{ 'SAVE' }}</a>
+                </div>
+            </div>
+        </form>
+    </div>
+<div class="container MDhidden MobUp">
+    <div class="col-xs-4 "><a  href="tel:0314 200 6655"><icon id="phone-icon" class="fa fa-phone"></icon> </a></div>
+<div class="col-xs-4"><a class="email-service PosEmailServiceOpen pointer" > <icon id="bell-icon" class="fa fa-bell"></icon> </a></div>
+    <div class="col-xs-4"><a href="help" class="ask-button"><icon id="ask-icon" class="fa fa-question-circle"></icon></a></div>
+<div id="callWhatsap" class="absMob MobUp"> <icon id="moveLeft" class="fa fa-arrow-left"></icon>	Call or Whatsapp  0317 355 5697</div>
+<div id="callEmail"></div>
+</div>
+<!-- Header LARGE SCREEN -->
+<div class="full-width  SMhidden PADhidden">
+<div class="container">
+<div class="row">
+<div class="col-sm-3 col-xs-12 padtablet" id="header-left" >
+<div class="logo">
+{% if logo %}<a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="img-responsive" /></a>{% else %}
+<h1><a href="{{ home }}">{{ name }}</a></h1>
+{% endif %}
+</div>
+</div>
+<div class="col-sm-3 padtabletView MDhidden"></div>
+<div class="col-sm-6" id="header-right">
+<div id="search" class="search_form">
+<div id="desk_button" class="button-search"></div>
+<input type="text" value="{{ search_txt }}" class="input-block-level search-query desk-search" name="search" placeholder="Search any item, brand or keyword" id="search_query" value="" />
+</div>
+</div>
+<div class="col-sm-3">
+<ul class="header-links SMhidden hidden" >
+{%if logged%}
+<li><a href="{{ logout }}"> $text_logout; ?></a></li>
+{% else%}
+<li><a href="{{ login }}">{{ text_login}} </a></li>
+<li><a href="{{ register }}">{{ text_register }}</a></li>
+{% endif %}
+</ul>
+{{ cart }}
+</div>
+</div>
+<div class="container-megamenu horizontal">
+<div class="megaMenuToggle">
+<div class="megamenuToogle-wrapper">
+<div class="megamenuToogle-pattern">
+<div class="container">
+<div><span></span><span></span><span></span></div>
+Navigation
+</div>
+</div>
+<p class="totip">MENU</p>
+</div>
+</div>
+<div class="megamenu-wrapper">
+<div class="megamenu-pattern">
+<div class="container">
+{% include 'ceptz/template/custom/menu.twig'%}
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Header LARGE SCREEN -->
+
+<!-- Header MBL SCREEN -->
+    <div class="full-width MDhidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2">
+
+                    <div class="container-megamenu horizontal">
+                        <div class="megaMenuToggle">
+                            <div  class="megamenuToogle-wrapper wrapperCLICK">
+                                <div class="megamenuToogle-pattern">
+                                    <div class="container">
+                                        <div><span></span><span></span><span></span></div>
+                                        Navigation
+                                    </div>
+                                </div>
+                                <p class="totip">MENU</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-xs-8" id="header-left" >
+                    <div class="logo">
+                        {% if logo %}<a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="img-responsive" /></a>{% else %}
+                            <h1><a href="{{ home }}">{{ name }}</a></h1>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col-xs-2 ">{{ cart }}</div>
+            </div>
+
+            <div id="animatedMenu"  class="container-mega horizontal mblnav">
+                <a class="closebtn pointer MDhidden PADhidden animatedMenuClose">&times;</a>
+                <div class="megaMenuToggle">
+                    <div class="megamenuToogle-wrapper hidden">
+                        <div class="megamenuToogle-pattern">
+                            <div class="container">
+                                <div><span></span><span></span><span></span></div>
+                                Navigation
+                            </div>
+                        </div>
+                        <p class="totip">MENU</p>
+                    </div>
+                </div>
+                <div class="megamenu-wrapper">
+                    <div class="megamenu-pattern">
+                        <div class="container">
+                            {% include 'ceptz/template/custom/menu.twig'%}
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+                <div class="clearfix"></div>
+            <div class="row">
+
+            <div class="col-xs-12" id="header-right">
+                    <div id="search" class="search_form">
+                        <div  id="mbl_button" class="button-search"></div>
+                        <input type="text" value="{{ search_txt }}" class="input-block-level search-query mbl-search" name="search" placeholder="Search any item, brand or keyword" id="search_mbl_query"  />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!-- Header MBL SCREEN -->
+
+
+
+</div>
+</div>
+</div>
+</div>
+<div class="full-width">
+ <div >
+    {% include 'ceptz/template/custom/promotion.twig'%}
+ </div>
+</div>
